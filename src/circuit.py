@@ -18,7 +18,7 @@ class Circuit:
     # (nom, start_x, start_y, start_angle, end_x, end_y)
     CIRCUITS = {
         1: ("Parcours 7 segments",      25,  10,   0,  725, 610),  # haut-gauche → bas-droite
-        2: ("Double boucle (vertical)", 255, 130,   0,  495, 490),  # fig-8 : séparateur vertical
+        2: ("Spirale inversee",          25,  10,   0,  425, 310),  # spirale de l'extérieur vers le centre
         3: ("Double boucle (horiz.)",   375, 130,   0,  375, 490),  # 2 boucles haut/bas
     }
 
@@ -92,23 +92,23 @@ class Circuit:
 
     def _draw_circuit2(self):
         """
-        Rectangle 8×6 + divison verticale centrale → figure-8 avec 2 croisements.
-        Le robot doit choisir la bonne boucle (gauche ou droite) aux croisements.
+        Spirale inversée (9 segments, 10 points) :
+        départ haut-gauche → grande boucle extérieure → spirale vers le centre.
+        pas = 50 px/carreau
         """
-        cs = CELL_SIZE
-        x0   = (self.width  - 8 * cs) // 2   # 135
-        y0   = (self.height - 6 * cs) // 2   # 130
-        x1   = x0 + 8 * cs                    # 615
-        y1   = y0 + 6 * cs                    # 490
-        x_mid = (x0 + x1) // 2               # 375
-
-        # Périmètre extérieur
-        pygame.draw.lines(self.line_surface, LINE_COLOR, True,
-                          [(x0, y0), (x1, y0), (x1, y1), (x0, y1)],
-                          LINE_WIDTH)
-        # Séparateur vertical central → 2 croisements haut et bas
-        pygame.draw.line(self.line_surface, LINE_COLOR,
-                         (x_mid, y0), (x_mid, y1), LINE_WIDTH)
+        pts = [
+            ( 25,  10),   # S  départ haut-gauche
+            (625,  10),   # → 12
+            (625, 510),   # ↓ 10
+            (125, 510),   # ← 10
+            (125, 210),   # ↑  6
+            (525, 210),   # →  8
+            (525, 410),   # ↓  4
+            (225, 410),   # ←  6
+            (225, 310),   # ↑  2
+            (425, 310),   # →  4  A arrivée
+        ]
+        pygame.draw.lines(self.line_surface, LINE_COLOR, False, pts, LINE_WIDTH)
 
     # ── Circuit 3 : Double boucle (séparateur horizontal) ────
 
