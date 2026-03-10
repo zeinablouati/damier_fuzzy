@@ -88,6 +88,8 @@ class Simulation:
                     self.circuit.load(1); self._reset()
                 elif event.key == pygame.K_2:
                     self.circuit.load(2); self._reset()
+                elif event.key == pygame.K_3:
+                    self.circuit.load(3); self._reset()
             
 
                 elif event.key == pygame.K_PLUS or event.key == pygame.K_EQUALS:
@@ -145,19 +147,30 @@ class Simulation:
         # 4. Contrôleur flou → variation d'angle
         da = self.fuzzy.compute(delta)
 
-        # 5. Déplacer le robot
+        # 5. Sauvegarder la position avant déplacement
+        pre_x, pre_y = self.robot.x, self.robot.y
+
+        # 6. Déplacer le robot
         self.robot.update(da)
         self.robot.x = self.robot.x % SIM_W
         self.robot.y = self.robot.y % SIM_H
 
-        # 6. Détection d'arrivée
+        # 7. Contrainte : jamais hors circuit (rollback si aucun capteur actif)
+        self.sensors.read(self.robot.x, self.robot.y, self.robot.angle, pixels)
+        if sum(self.sensors.bits) == 0:
+            self.robot.x = pre_x
+            self.robot.y = pre_y
+            if self.robot.trace:
+                self.robot.trace.pop()
+
+        # 9. Détection d'arrivée
         dist = math.hypot(self.robot.x - self.end_x,
                           self.robot.y - self.end_y)
         if dist < self.ARRIVE_RADIUS:
             self.arrived = True
             self.paused  = True
 
-        # 7. Mémoriser pour affichage
+        # 10. Mémoriser pour affichage
         self.last_G     = G
         self.last_D     = D
         self.last_delta = delta

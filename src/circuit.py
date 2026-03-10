@@ -17,7 +17,7 @@ class Circuit:
 
     # (nom, start_x, start_y, start_angle, end_x, end_y)
     CIRCUITS = {
-        1: ("Rectangle 10x6",          375, 130,   0,  375, 490),  # bord haut → bord bas
+        1: ("Parcours 7 segments",      25,  10,   0,  725, 610),  # haut-gauche → bas-droite
         2: ("Double boucle (vertical)", 255, 130,   0,  495, 490),  # fig-8 : séparateur vertical
         3: ("Double boucle (horiz.)",   375, 130,   0,  375, 490),  # 2 boucles haut/bas
     }
@@ -64,18 +64,29 @@ class Circuit:
         xor_arr   = np.bitwise_xor(board_arr, line_arr)
         pygame.surfarray.blit_array(self.display_surface, xor_arr)
 
-    # ── Circuit 1 : Grand rectangle 10×6 ────────────────────
+    # ── Circuit 1 : Parcours en 7 segments ──────────────────
 
     def _draw_circuit1(self):
-        """Rectangle 10 carreaux × 6 carreaux = 600×360 px, centré."""
-        cs = CELL_SIZE
-        x0 = (self.width  - 10 * cs) // 2   # 75
-        y0 = (self.height -  6 * cs) // 2   # 130
-        x1 = x0 + 10 * cs                    # 675
-        y1 = y0 +  6 * cs                    # 490
-        pygame.draw.lines(self.line_surface, LINE_COLOR, True,
-                          [(x0, y0), (x1, y0), (x1, y1), (x0, y1)],
-                          LINE_WIDTH)
+        """
+        Chemin ouvert de S (haut-gauche) à A (bas-droite) :
+          →4  ↓5  →4  ↓3  ←2  ↓4  →8
+        pas = 50 px/carreau  (14×12 carreaux = 700×600 px)
+        """
+        s  = 50          # 1 carreau = 50 px
+        x0 = 25          # marge gauche
+        y0 = 10          # marge haute
+
+        pts = [
+            (x0,          y0),           # S  départ haut-gauche
+            (x0 + 4*s,    y0),           # → 4
+            (x0 + 4*s,    y0 + 5*s),     # ↓ 5
+            (x0 + 8*s,    y0 + 5*s),     # → 4
+            (x0 + 8*s,    y0 + 8*s),     # ↓ 3
+            (x0 + 6*s,    y0 + 8*s),     # ← 2
+            (x0 + 6*s,    y0 + 12*s),    # ↓ 4
+            (x0 + 14*s,   y0 + 12*s),    # → 8  A arrivée bas-droite
+        ]
+        pygame.draw.lines(self.line_surface, LINE_COLOR, False, pts, LINE_WIDTH)
 
     # ── Circuit 2 : Double boucle (séparateur vertical) ──────
 
