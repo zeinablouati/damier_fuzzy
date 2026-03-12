@@ -3,8 +3,8 @@ import math
 import pygame
 import numpy as np
 from collections import defaultdict
-from src.pathfinder import (bfs_shortest, get_snake_path, get_diagonal_path,
-                             START, END)
+from src.pathfinder import (bfs_shortest, get_snake_path,
+                             get_angles_path, START, END)
 
 BLACK      = (  0,   0,   0)
 WHITE      = (255, 255, 255)
@@ -73,15 +73,15 @@ class Circuit:
         self.combined_surface = pygame.Surface((width, height))
 
         self.line_surfaces = {
-            'court':    pygame.Surface((width, height)),
-            'long':     pygame.Surface((width, height)),
-            'diagonal': pygame.Surface((width, height)),
+            'court':  pygame.Surface((width, height)),
+            'long':   pygame.Surface((width, height)),
+            'angles': pygame.Surface((width, height)),
         }
 
         self.paths = {
-            'court':    bfs_shortest(),
-            'long':     get_snake_path(),
-            'diagonal': get_diagonal_path(),
+            'court':  bfs_shortest(),
+            'long':   get_snake_path(),
+            'angles': get_angles_path(),
         }
         self.active_mode = 'court'
 
@@ -91,15 +91,15 @@ class Circuit:
 
     def _init(self):
         self._draw_board()
-        for mode in ('court', 'long', 'diagonal'):
+        for mode in ('court', 'long', 'angles'):
             self.line_surfaces[mode].fill(BLACK)
 
         self._draw_path_straight(self.line_surfaces['court'],
                                   self.paths['court'])
         self._draw_path_smooth(self.line_surfaces['long'],
                                 self.paths['long'])
-        self._draw_path_diagonal(self.line_surfaces['diagonal'],
-                                  self.paths['diagonal'])
+        self._draw_path_diagonal(self.line_surfaces['angles'],
+                                  self.paths['angles'])
         self._build_combined()
 
     # ── Damier ──────────────────────────────────────────────
@@ -272,4 +272,4 @@ class Circuit:
 
     def get_name(self):
         return {'court': 'Court', 'long': 'Long',
-                'diagonal': 'Diagonal 45°'}[self.active_mode]
+                'angles': 'Angles Mix'}[self.active_mode]

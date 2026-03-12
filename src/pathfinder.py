@@ -78,34 +78,36 @@ def get_snake_path():
     )
 
 
-# ── Chemin 3 : complexe avec diagonales 45° ──────────────
+# ── Chemin 3 : 3 virages 45° + 1 virage 90°, espacés ────
 
-def get_diagonal_path():
+def get_angles_path():
     """
-    Chemin complexe mêlant segments droits H/V et diagonales à 45°.
+    Chemin avec 3 virages à 45° et 1 virage à 90°, bien espacés.
 
     Tracé (grille 10×8) :
 
-    S(1,1) → droite → (3,1)
-                         ↘ diagonale SE
-                           (4,2),(5,3),(6,4),(7,5)
-                                              → droite → (10,5)
-                                                            ↙ diagonale SW
-                                                              (9,6),(8,7)
-                                                                    → droite → (10,7)
-                                                                                  ↓
-                                                                               F(10,8)
+    S(1,1)
+      ↘ diagonale SE
+      (2,2),(3,3)
+              ──────────────→ (6,3)   horizontal →  ← virage 45°
+                                  ↓
+                               (6,4)               ← virage 90° (H→V)
+                               (6,5)
+                               (6,6)
+                                  ↘ diagonale SE   ← virage 45°
+                                  (7,7),(8,8)
+                                           ──→ F(10,8)  ← virage 45°
 
-    Angles présents :
-      - 2 diagonales à 45° (SE et SW)
-      - raccordements droite→diagonale et diagonale→droite
-      - descente verticale finale
+    Angles aux jonctions :
+      45° : (3,3)  diagonale SE → horizontal        (espacé de 2 cases)
+      90° : (6,3)  horizontal   → vertical ↓        (espacé de 3 cases)
+      45° : (6,6)  vertical     → diagonale SE      (espacé de 3 cases)
+      45° : (8,8)  diagonale SE → horizontal →      (espacé de 2 cases)
     """
     return (
-        _row(1, 3, 1)              +   # (1,1)→(3,1)   horizontal →
-        _diag(3, 1, 7, 5)[1:]     +   # (3,1)→(7,5)   diagonale  ↘  45°
-        _row(7, 11, 5)[1:]        +   # (7,5)→(10,5)  horizontal →
-        _diag(11, 5, 8, 7)[1:]   +   # (10,5)→(8,7)  diagonale  ↙  45°
-        _row(8, 10, 7)[1:]        +   # (8,7)→(10,7)  horizontal →
-        _col(7, 8, 10)[1:]            # (10,7)→(10,8) vertical   ↓
+        _diag(1, 1, 3, 3)         +   # (1,1)→(3,3)   diagonale  ↘
+        _row(3, 6, 3)[1:]         +   # (3,3)→(6,3)   horizontal →  [virage 45°]
+        _col(3, 6, 6)[1:]         +   # (6,3)→(6,6)   vertical   ↓  [virage 90° H→V]
+        _diag(6, 6, 8, 8)[1:]    +   # (6,6)→(8,8)   diagonale  ↘  [virage 45°]
+        _row(8, 10, 8)[1:]            # (8,8)→(10,8)  horizontal →  [virage 45°]
     )

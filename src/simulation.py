@@ -81,7 +81,7 @@ class Simulation:
                 if   k == pygame.K_ESCAPE: pygame.quit(); sys.exit()
                 elif k == pygame.K_c:      self._switch('court')
                 elif k == pygame.K_l:      self._switch('long')
-                elif k == pygame.K_d:      self._switch('diagonal')
+                elif k == pygame.K_a:      self._switch('angles')
                 elif k == pygame.K_SPACE:
                     if   self.state == 'idle':    self.state = 'run'; self.paused = False
                     elif self.state == 'run':     self.paused = not self.paused
@@ -173,9 +173,9 @@ class Simulation:
         overlay = pygame.Surface((SIM_W, SIM_H), pygame.SRCALPHA)
 
         for mode, color_fill, color_border in [
-            ('diagonal', (160,  60, 220), (200, 100, 255)),
-            ('long',      (255,  80,  30), (255, 140,  60)),
-            ('court',     ( 20, 200,  80), ( 80, 255, 120)),
+            ('angles', ( 30, 160, 220), ( 80, 210, 255)),
+            ('long',   (255,  80,  30), (255, 140,  60)),
+            ('court',  ( 20, 200,  80), ( 80, 255, 120)),
         ]:
             is_active = (mode == active)
             alpha_fill   = 55  if not is_active else 90
@@ -240,21 +240,21 @@ class Simulation:
         active = self.circuit.active_mode
         nc = self.circuit.get_path_len('court')
         nl = self.circuit.get_path_len('long')
-        nd = self.circuit.get_path_len('diagonal')
+        na = self.circuit.get_path_len('angles')
 
         t = self.font_md.render("CHOISIR LE CHEMIN :", True, C_YELLOW)
         self.screen.blit(t, (ox + 10, oy + 6))
 
-        c_col = C_GREEN        if active == 'court'    else C_GRAY
-        l_col = (255,140, 60)  if active == 'long'     else C_GRAY
-        d_col = (200,100,255)  if active == 'diagonal' else C_GRAY
+        c_col = C_GREEN       if active == 'court'  else C_GRAY
+        l_col = (255,140, 60) if active == 'long'   else C_GRAY
+        a_col = ( 80,210,255) if active == 'angles' else C_GRAY
         s_col = C_ACCENT
 
         for txt, col, dx in [
-            (f"[C] Court {nc}c",    c_col,  10),
-            (f"[L] Long {nl}c",     l_col, 170),
-            (f"[D] Diag {nd}c",     d_col, 320),
-            ("ESPACE = go",         s_col, 460),
+            (f"[C] Court {nc}c",  c_col,  10),
+            (f"[L] Long {nl}c",   l_col, 180),
+            (f"[A] Angl {na}c",   a_col, 350),
+            ("ESPACE = go",       s_col, 480),
         ]:
             s = self.font_md.render(txt, True, col)
             self.screen.blit(s, (ox + dx, oy + 28))
@@ -269,7 +269,7 @@ class Simulation:
         self.screen.blit(ov, (ox, oy))
 
         mode  = self.circuit.active_mode.upper()
-        col   = C_GREEN if self.circuit.active_mode == 'court' else (200,100,255) if self.circuit.active_mode == 'diagonal' else (255,140,60)
+        col   = C_GREEN if self.circuit.active_mode == 'court' else (80,210,255) if self.circuit.active_mode == 'angles' else (255,140,60)
         msg1  = self.font_xl.render(
             f"ARRIVÉE !  chemin {mode} — {self.steps} pas", True, col)
         msg2  = self.font_md.render(
@@ -298,14 +298,14 @@ class Simulation:
 
         title("[ CHEMIN ]")
         active = self.circuit.active_mode
-        line("[C] Court",   f"{self.circuit.get_path_len('court')} cases",
+        line("[C] Court",  f"{self.circuit.get_path_len('court')} cases",
              C_GREEN if active=='court' else C_GRAY)
-        line("[L] Long",    f"{self.circuit.get_path_len('long')} cases",
+        line("[L] Long",   f"{self.circuit.get_path_len('long')} cases",
              (255,140,60) if active=='long' else C_GRAY)
-        line("[D] Diagonal", f"{self.circuit.get_path_len('diagonal')} cases",
-             (200,100,255) if active=='diagonal' else C_GRAY)
+        line("[A] Angles", f"{self.circuit.get_path_len('angles')} cases",
+             (80,210,255) if active=='angles' else C_GRAY)
         line("Actif", active.upper(),
-             C_GREEN if active=='court' else (200,100,255) if active=='diagonal' else (255,140,60))
+             C_GREEN if active=='court' else (80,210,255) if active=='angles' else (255,140,60))
         spacer()
 
         title("[ ROBOT ]")
@@ -349,8 +349,8 @@ class Simulation:
         spacer()
 
         title("[ CONTROLES ]")
-        for txt in ["C       chemin court","L       chemin long","D       diag 45°",
-                    "ESPACE  start/pause", "R       reset",
+        for txt in ["C       chemin court","L       chemin long",
+                    "A       angles mix", "ESPACE  start/pause", "R       reset",
                     "+/-     vitesse",     "S       capteurs",
                     "T       trace",       "ESC     quitter"]:
             self.screen.blit(self.font_sm.render(txt, True, C_GRAY), (x, y)); y += 16
