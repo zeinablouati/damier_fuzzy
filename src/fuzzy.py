@@ -3,11 +3,14 @@
 class FuzzyController:
 
     def __init__(self):
-        self.delta_range = 120
-        self.zero_range  = 60
-        self.OUT_N = -35.0
+        # delta_range=255 : couvre la plage max de D (0..255) sans saturation
+        self.delta_range = 255
+        # zero_range=30 : zone neutre plus étroite → réaction plus précise
+        self.zero_range  = 30
+        # OUT_N/P réduits à ±15° : virages plus doux, moins de dépassement
+        self.OUT_N = -15.0
         self.OUT_Z =   0.0
-        self.OUT_P = +35.0
+        self.OUT_P = +15.0
         self.mu_N  =  0.0
         self.mu_Z  =  0.0
         self.mu_P  =  0.0

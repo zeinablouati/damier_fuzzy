@@ -1,0 +1,731 @@
+10:45:45.123 | INFO     | ============================================================
+10:45:45.123 | INFO     | INIT | circuit=Parcours 7 segments | start=(25,10) | angle=0°
+10:45:46.844 | DEBUG    | FUZZY | pos=(25,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:46.844 | INFO     | CASE | col=0 row=0 | couleur=NOIR  | séquence=[N]
+10:45:46.861 | DEBUG    | FUZZY | pos=(28,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:46.878 | DEBUG    | FUZZY | pos=(31,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:46.892 | DEBUG    | FUZZY | pos=(34,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:46.909 | DEBUG    | FUZZY | pos=(37,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:46.925 | DEBUG    | FUZZY | pos=(40,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:46.942 | DEBUG    | FUZZY | pos=(43,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:46.958 | DEBUG    | FUZZY | pos=(46,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:46.975 | DEBUG    | FUZZY | pos=(49,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:46.992 | DEBUG    | FUZZY | pos=(52,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.009 | DEBUG    | FUZZY | pos=(55,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.026 | DEBUG    | FUZZY | pos=(58,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.026 | INFO     | CASE | col=1 row=0 | couleur=BLANC | séquence=[N → B]
+10:45:47.043 | DEBUG    | FUZZY | pos=(61,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.060 | DEBUG    | FUZZY | pos=(64,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.077 | DEBUG    | FUZZY | pos=(67,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.093 | DEBUG    | FUZZY | pos=(70,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.109 | DEBUG    | FUZZY | pos=(73,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.124 | DEBUG    | FUZZY | pos=(76,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.146 | DEBUG    | FUZZY | pos=(79,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.162 | DEBUG    | FUZZY | pos=(82,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.180 | DEBUG    | FUZZY | pos=(85,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.192 | DEBUG    | FUZZY | pos=(88,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.209 | DEBUG    | FUZZY | pos=(91,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.224 | DEBUG    | FUZZY | pos=(94,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.241 | DEBUG    | FUZZY | pos=(97,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.257 | DEBUG    | FUZZY | pos=(100,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.274 | DEBUG    | FUZZY | pos=(103,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.291 | DEBUG    | FUZZY | pos=(106,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.309 | DEBUG    | FUZZY | pos=(109,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.326 | DEBUG    | FUZZY | pos=(112,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.342 | DEBUG    | FUZZY | pos=(115,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.360 | DEBUG    | FUZZY | pos=(118,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.360 | INFO     | CASE | col=2 row=0 | couleur=NOIR  | séquence=[N → B → N]
+10:45:47.378 | DEBUG    | FUZZY | pos=(121,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.393 | DEBUG    | FUZZY | pos=(124,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.409 | DEBUG    | FUZZY | pos=(127,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.425 | DEBUG    | FUZZY | pos=(130,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.443 | DEBUG    | FUZZY | pos=(133,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.458 | DEBUG    | FUZZY | pos=(136,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.474 | DEBUG    | FUZZY | pos=(139,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.492 | DEBUG    | FUZZY | pos=(142,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.507 | DEBUG    | FUZZY | pos=(145,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.523 | DEBUG    | FUZZY | pos=(148,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.540 | DEBUG    | FUZZY | pos=(151,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.557 | DEBUG    | FUZZY | pos=(154,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.574 | DEBUG    | FUZZY | pos=(157,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.592 | DEBUG    | FUZZY | pos=(160,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.608 | DEBUG    | FUZZY | pos=(163,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.625 | DEBUG    | FUZZY | pos=(166,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.642 | DEBUG    | FUZZY | pos=(169,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.660 | DEBUG    | FUZZY | pos=(172,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.676 | DEBUG    | FUZZY | pos=(175,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.693 | DEBUG    | FUZZY | pos=(178,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.693 | INFO     | CASE | col=3 row=0 | couleur=BLANC | séquence=[N → B → N → B]
+10:45:47.709 | DEBUG    | FUZZY | pos=(181,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.724 | DEBUG    | FUZZY | pos=(184,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.742 | DEBUG    | FUZZY | pos=(187,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.759 | DEBUG    | FUZZY | pos=(190,10) | angle=0.0° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:47.775 | INFO     | COIN_DROIT | G=1 D=255 delta=254 → virage 90° droite
+10:45:47.792 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=4.0° | remaining=86.0° | bits=5 | bits_mask=0000001111100000
+10:45:47.792 | INFO     | TURN_OK | angle=4.0° | bits=5 → ligne retrouvée, rotation arrêtée
+10:45:47.809 | DEBUG    | FUZZY | pos=(193,10) | angle=4.0° | G=3 D=7 delta=4 | mu_N=0.00 mu_Z=0.87 mu_P=0.02 | da=0.21°
+10:45:47.826 | DEBUG    | FUZZY | pos=(196,10) | angle=4.2° | G=3 D=255 delta=252 | mu_N=0.00 mu_Z=0.00 mu_P=0.99 | da=12.04°
+10:45:47.843 | DEBUG    | FUZZY | pos=(199,10) | angle=16.3° | G=3 D=7 delta=4 | mu_N=0.00 mu_Z=0.87 mu_P=0.02 | da=2.62°
+10:45:47.860 | DEBUG    | FUZZY | pos=(202,11) | angle=18.9° | G=7 D=15 delta=8 | mu_N=0.00 mu_Z=0.73 mu_P=0.03 | da=1.02°
+10:45:47.877 | DEBUG    | FUZZY | pos=(205,12) | angle=19.9° | G=3 D=31 delta=28 | mu_N=0.00 mu_Z=0.07 mu_P=0.11 | da=7.67°
+10:45:47.895 | DEBUG    | FUZZY | pos=(208,13) | angle=27.6° | G=3 D=15 delta=12 | mu_N=0.00 mu_Z=0.60 mu_P=0.05 | da=2.41°
+10:45:47.910 | INFO     | COIN_DROIT | G=1 D=31 delta=30 → virage 90° droite
+10:45:47.926 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=34.0° | remaining=86.0° | bits=5 | bits_mask=0000000111110000
+10:45:47.926 | INFO     | TURN_OK | angle=34.0° | bits=5 → ligne retrouvée, rotation arrêtée
+10:45:47.942 | INFO     | COIN_DROIT | G=1 D=15 delta=14 → virage 90° droite
+10:45:47.960 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=38.0° | remaining=86.0° | bits=4 | bits_mask=0000000111100000
+10:45:47.960 | INFO     | TURN_OK | angle=38.0° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:47.976 | DEBUG    | FUZZY | pos=(210,15) | angle=38.0° | G=1 D=7 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.82°
+10:45:47.994 | INFO     | COIN_DROIT | G=1 D=15 delta=14 → virage 90° droite
+10:45:48.010 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=42.8° | remaining=86.0° | bits=4 | bits_mask=0000000111100000
+10:45:48.010 | INFO     | TURN_OK | angle=42.8° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:48.028 | DEBUG    | FUZZY | pos=(213,16) | angle=42.8° | G=1 D=7 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.51°
+10:45:48.044 | INFO     | COIN_DROIT | G=0 D=15 delta=15 → virage 90° droite
+10:45:48.061 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=47.3° | remaining=86.0° | bits=4 | bits_mask=0000000111100000
+10:45:48.061 | INFO     | TURN_OK | angle=47.3° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:48.078 | DEBUG    | FUZZY | pos=(215,19) | angle=47.3° | G=1 D=7 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.44°
+10:45:48.094 | DEBUG    | FUZZY | pos=(217,21) | angle=47.7° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.50°
+10:45:48.109 | INFO     | COIN_DROIT | G=0 D=15 delta=15 → virage 90° droite
+10:45:48.127 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=52.3° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:48.127 | INFO     | TURN_OK | angle=52.3° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:48.144 | DEBUG    | FUZZY | pos=(219,23) | angle=52.3° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:48.162 | INFO     | COIN_DROIT | G=0 D=15 delta=15 → virage 90° droite
+10:45:48.179 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=56.8° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:48.179 | INFO     | TURN_OK | angle=56.8° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:48.195 | DEBUG    | FUZZY | pos=(221,25) | angle=56.8° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:48.211 | DEBUG    | FUZZY | pos=(222,28) | angle=57.3° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:48.228 | INFO     | COIN_DROIT | G=0 D=15 delta=15 → virage 90° droite
+10:45:48.246 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=61.8° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:48.247 | INFO     | TURN_OK | angle=61.8° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:48.263 | DEBUG    | FUZZY | pos=(224,30) | angle=61.8° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:48.279 | DEBUG    | FUZZY | pos=(225,33) | angle=62.3° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:48.295 | INFO     | COIN_DROIT | G=0 D=14 delta=14 → virage 90° droite
+10:45:48.312 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=66.8° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:48.312 | INFO     | TURN_OK | angle=66.8° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:48.329 | DEBUG    | FUZZY | pos=(227,36) | angle=66.8° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:48.346 | DEBUG    | FUZZY | pos=(228,38) | angle=67.4° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:48.361 | INFO     | COIN_DROIT | G=0 D=14 delta=14 → virage 90° droite
+10:45:48.378 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=71.9° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:48.378 | INFO     | TURN_OK | angle=71.9° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:48.396 | DEBUG    | FUZZY | pos=(229,41) | angle=71.9° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:48.412 | DEBUG    | FUZZY | pos=(230,44) | angle=72.4° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:48.426 | DEBUG    | FUZZY | pos=(231,47) | angle=72.9° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.45°
+10:45:48.443 | INFO     | COIN_DROIT | G=0 D=14 delta=14 → virage 90° droite
+10:45:48.459 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=77.4° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:48.459 | INFO     | TURN_OK | angle=77.4° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:48.476 | DEBUG    | FUZZY | pos=(232,50) | angle=77.4° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.50°
+10:45:48.494 | DEBUG    | FUZZY | pos=(232,53) | angle=77.9° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:48.510 | DEBUG    | FUZZY | pos=(233,56) | angle=78.4° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.45°
+10:45:48.526 | DEBUG    | FUZZY | pos=(234,59) | angle=78.8° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:48.527 | INFO     | CASE | col=3 row=1 | couleur=NOIR  | séquence=[N → B → N → B → N]
+10:45:48.543 | DEBUG    | FUZZY | pos=(234,62) | angle=79.3° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:48.560 | DEBUG    | FUZZY | pos=(235,64) | angle=79.7° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:48.576 | INFO     | COIN_DROIT | G=0 D=14 delta=14 → virage 90° droite
+10:45:48.593 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=84.1° | remaining=86.0° | bits=2 | bits_mask=0000000001100000
+10:45:48.593 | INFO     | TURN_OK | angle=84.1° | bits=2 → ligne retrouvée, rotation arrêtée
+10:45:48.610 | DEBUG    | FUZZY | pos=(235,67) | angle=84.1° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:48.627 | DEBUG    | FUZZY | pos=(236,70) | angle=84.5° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:48.642 | DEBUG    | FUZZY | pos=(236,73) | angle=85.0° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:48.659 | DEBUG    | FUZZY | pos=(236,76) | angle=85.4° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:48.676 | DEBUG    | FUZZY | pos=(236,79) | angle=85.8° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:48.691 | DEBUG    | FUZZY | pos=(237,82) | angle=86.3° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:48.708 | DEBUG    | FUZZY | pos=(237,85) | angle=86.7° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:48.724 | DEBUG    | FUZZY | pos=(237,88) | angle=87.1° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:48.741 | DEBUG    | FUZZY | pos=(237,91) | angle=87.5° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:48.759 | DEBUG    | FUZZY | pos=(237,94) | angle=88.0° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:48.774 | DEBUG    | FUZZY | pos=(237,97) | angle=88.4° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:48.791 | DEBUG    | FUZZY | pos=(237,100) | angle=88.8° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:48.809 | DEBUG    | FUZZY | pos=(238,103) | angle=89.3° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:48.826 | DEBUG    | FUZZY | pos=(238,106) | angle=89.7° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.50°
+10:45:48.842 | DEBUG    | FUZZY | pos=(238,109) | angle=90.2° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.51°
+10:45:48.858 | DEBUG    | FUZZY | pos=(238,112) | angle=90.7° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:48.874 | DEBUG    | FUZZY | pos=(238,115) | angle=91.2° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:48.892 | DEBUG    | FUZZY | pos=(237,118) | angle=91.7° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:48.892 | INFO     | CASE | col=3 row=2 | couleur=BLANC | séquence=[N → B → N → B → N → B]
+10:45:48.909 | DEBUG    | FUZZY | pos=(237,121) | angle=92.3° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:48.925 | DEBUG    | FUZZY | pos=(237,124) | angle=92.8° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:48.942 | DEBUG    | FUZZY | pos=(237,127) | angle=93.3° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:48.959 | DEBUG    | FUZZY | pos=(237,130) | angle=93.8° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:48.975 | DEBUG    | FUZZY | pos=(237,133) | angle=94.3° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:48.992 | DEBUG    | FUZZY | pos=(237,136) | angle=94.9° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:49.010 | DEBUG    | FUZZY | pos=(236,139) | angle=95.4° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:49.025 | DEBUG    | FUZZY | pos=(236,142) | angle=95.9° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:49.041 | DEBUG    | FUZZY | pos=(236,145) | angle=96.4° | G=0 D=3 delta=3 | mu_N=0.00 mu_Z=0.90 mu_P=0.01 | da=0.26°
+10:45:49.058 | DEBUG    | FUZZY | pos=(235,148) | angle=96.7° | G=0 D=3 delta=3 | mu_N=0.00 mu_Z=0.90 mu_P=0.01 | da=0.21°
+10:45:49.075 | DEBUG    | FUZZY | pos=(235,151) | angle=96.9° | G=0 D=3 delta=3 | mu_N=0.00 mu_Z=0.90 mu_P=0.01 | da=0.20°
+10:45:49.092 | DEBUG    | FUZZY | pos=(235,154) | angle=97.1° | G=0 D=3 delta=3 | mu_N=0.00 mu_Z=0.90 mu_P=0.01 | da=0.19°
+10:45:49.108 | DEBUG    | FUZZY | pos=(234,157) | angle=97.3° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.14°
+10:45:49.124 | DEBUG    | FUZZY | pos=(234,160) | angle=97.4° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:49.140 | DEBUG    | FUZZY | pos=(234,163) | angle=97.5° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:49.156 | DEBUG    | FUZZY | pos=(233,166) | angle=97.7° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:49.173 | DEBUG    | FUZZY | pos=(233,169) | angle=97.8° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:49.189 | DEBUG    | FUZZY | pos=(232,172) | angle=97.9° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:49.205 | DEBUG    | FUZZY | pos=(232,175) | angle=98.0° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:49.222 | DEBUG    | FUZZY | pos=(231,178) | angle=98.2° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:49.223 | INFO     | CASE | col=3 row=3 | couleur=NOIR  | séquence=[N → B → N → B → N → B → N]
+10:45:49.241 | DEBUG    | FUZZY | pos=(231,181) | angle=98.3° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:49.257 | DEBUG    | FUZZY | pos=(231,184) | angle=98.4° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:49.274 | DEBUG    | FUZZY | pos=(230,187) | angle=98.5° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:49.290 | DEBUG    | FUZZY | pos=(230,190) | angle=98.7° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.03°
+10:45:49.307 | DEBUG    | FUZZY | pos=(229,193) | angle=98.7° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.01°
+10:45:49.324 | DEBUG    | FUZZY | pos=(229,196) | angle=98.7° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:49.342 | DEBUG    | FUZZY | pos=(228,199) | angle=98.7° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=0.00°
+10:45:49.358 | DEBUG    | FUZZY | pos=(228,202) | angle=98.7° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.10°
+10:45:49.375 | DEBUG    | FUZZY | pos=(227,205) | angle=98.6° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.12°
+10:45:49.392 | DEBUG    | FUZZY | pos=(227,208) | angle=98.5° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.12°
+10:45:49.409 | DEBUG    | FUZZY | pos=(227,211) | angle=98.3° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.12°
+10:45:49.426 | DEBUG    | FUZZY | pos=(226,214) | angle=98.2° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.12°
+10:45:49.441 | DEBUG    | FUZZY | pos=(226,217) | angle=98.1° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.12°
+10:45:49.457 | DEBUG    | FUZZY | pos=(225,220) | angle=98.0° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.12°
+10:45:49.474 | INFO     | COIN_GAUCHE | G=227 D=1 delta=-226 → virage 90° gauche
+10:45:49.491 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=93.8° | remaining=86.0° | bits=3 | bits_mask=0000001110000000
+10:45:49.491 | INFO     | TURN_OK | angle=93.8° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:49.507 | DEBUG    | FUZZY | pos=(225,223) | angle=93.8° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.12°
+10:45:49.524 | INFO     | COIN_GAUCHE | G=255 D=1 delta=-254 → virage 90° gauche
+10:45:49.540 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=89.7° | remaining=86.0° | bits=2 | bits_mask=0000000110000000
+10:45:49.541 | INFO     | TURN_OK | angle=89.7° | bits=2 → ligne retrouvée, rotation arrêtée
+10:45:49.557 | DEBUG    | FUZZY | pos=(225,225) | angle=89.7° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=-0.02°
+10:45:49.574 | INFO     | COIN_GAUCHE | G=255 D=1 delta=-254 → virage 90° gauche
+10:45:49.590 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=85.7° | remaining=86.0° | bits=6 | bits_mask=0000111111000000
+10:45:49.590 | INFO     | TURN_OK | angle=85.7° | bits=6 → ligne retrouvée, rotation arrêtée
+10:45:49.608 | DEBUG    | FUZZY | pos=(225,228) | angle=85.7° | G=15 D=3 delta=-12 | mu_N=0.05 mu_Z=0.60 mu_P=0.00 | da=-0.88°
+10:45:49.624 | DEBUG    | FUZZY | pos=(225,231) | angle=84.8° | G=255 D=3 delta=-252 | mu_N=0.99 mu_Z=0.00 mu_P=0.00 | da=-12.18°
+10:45:49.639 | DEBUG    | FUZZY | pos=(225,234) | angle=72.6° | G=7 D=7 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=-2.44°
+10:45:49.657 | DEBUG    | FUZZY | pos=(226,237) | angle=70.2° | G=15 D=3 delta=-12 | mu_N=0.05 mu_Z=0.60 mu_P=0.00 | da=-1.36°
+10:45:49.657 | INFO     | CASE | col=3 row=4 | couleur=BLANC | séquence=[N → B → N → B → N → B → N → B]
+10:45:49.673 | DEBUG    | FUZZY | pos=(227,240) | angle=68.8° | G=31 D=3 delta=-28 | mu_N=0.11 mu_Z=0.07 mu_P=0.00 | da=-7.74°
+10:45:49.690 | INFO     | COIN_GAUCHE | G=15 D=1 delta=-14 → virage 90° gauche
+10:45:49.706 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=57.1° | remaining=86.0° | bits=5 | bits_mask=0000011111000000
+10:45:49.706 | INFO     | TURN_OK | angle=57.1° | bits=5 → ligne retrouvée, rotation arrêtée
+10:45:49.723 | DEBUG    | FUZZY | pos=(228,243) | angle=57.1° | G=7 D=3 delta=-4 | mu_N=0.02 mu_Z=0.87 mu_P=0.00 | da=-1.76°
+10:45:49.739 | INFO     | COIN_GAUCHE | G=15 D=1 delta=-14 → virage 90° gauche
+10:45:49.756 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=51.3° | remaining=86.0° | bits=4 | bits_mask=0000011110000000
+10:45:49.757 | INFO     | TURN_OK | angle=51.3° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:49.773 | DEBUG    | FUZZY | pos=(230,245) | angle=51.3° | G=7 D=1 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.70°
+10:45:49.790 | INFO     | COIN_GAUCHE | G=15 D=1 delta=-14 → virage 90° gauche
+10:45:49.807 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=46.6° | remaining=86.0° | bits=4 | bits_mask=0000011110000000
+10:45:49.807 | INFO     | TURN_OK | angle=46.6° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:49.824 | DEBUG    | FUZZY | pos=(232,248) | angle=46.6° | G=7 D=1 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.48°
+10:45:49.842 | INFO     | COIN_GAUCHE | G=15 D=0 delta=-15 → virage 90° gauche
+10:45:49.858 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=42.2° | remaining=86.0° | bits=4 | bits_mask=0000011110000000
+10:45:49.858 | INFO     | TURN_OK | angle=42.2° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:49.876 | DEBUG    | FUZZY | pos=(234,250) | angle=42.2° | G=7 D=1 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.44°
+10:45:49.892 | DEBUG    | FUZZY | pos=(236,252) | angle=41.7° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.50°
+10:45:49.909 | INFO     | COIN_GAUCHE | G=15 D=0 delta=-15 → virage 90° gauche
+10:45:49.926 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=37.2° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:49.926 | INFO     | TURN_OK | angle=37.2° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:49.942 | DEBUG    | FUZZY | pos=(238,254) | angle=37.2° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:49.942 | INFO     | CASE | col=4 row=4 | couleur=NOIR  | séquence=[N → B → N → B → N → B → N → B → N]
+10:45:49.959 | INFO     | COIN_GAUCHE | G=15 D=0 delta=-15 → virage 90° gauche
+10:45:49.975 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=32.7° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:49.975 | INFO     | TURN_OK | angle=32.7° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:49.991 | DEBUG    | FUZZY | pos=(241,256) | angle=32.7° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.009 | DEBUG    | FUZZY | pos=(243,257) | angle=32.2° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.026 | INFO     | COIN_GAUCHE | G=15 D=0 delta=-15 → virage 90° gauche
+10:45:50.042 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=27.7° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:50.043 | INFO     | TURN_OK | angle=27.7° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:50.059 | DEBUG    | FUZZY | pos=(246,259) | angle=27.7° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.076 | DEBUG    | FUZZY | pos=(248,260) | angle=27.2° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.092 | INFO     | COIN_GAUCHE | G=14 D=0 delta=-14 → virage 90° gauche
+10:45:50.108 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=22.6° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:50.108 | INFO     | TURN_OK | angle=22.6° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:50.127 | DEBUG    | FUZZY | pos=(251,262) | angle=22.6° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.142 | DEBUG    | FUZZY | pos=(254,263) | angle=22.1° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.160 | INFO     | COIN_GAUCHE | G=14 D=0 delta=-14 → virage 90° gauche
+10:45:50.175 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=17.6° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:50.176 | INFO     | TURN_OK | angle=17.6° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:50.192 | DEBUG    | FUZZY | pos=(257,264) | angle=17.6° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.208 | DEBUG    | FUZZY | pos=(259,265) | angle=17.1° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.225 | DEBUG    | FUZZY | pos=(262,266) | angle=16.6° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.45°
+10:45:50.240 | DEBUG    | FUZZY | pos=(265,267) | angle=16.1° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:50.257 | INFO     | COIN_GAUCHE | G=14 D=0 delta=-14 → virage 90° gauche
+10:45:50.274 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=11.7° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:50.274 | INFO     | TURN_OK | angle=11.7° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:50.291 | DEBUG    | FUZZY | pos=(268,268) | angle=11.7° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.50°
+10:45:50.307 | DEBUG    | FUZZY | pos=(271,268) | angle=11.2° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.44°
+10:45:50.323 | DEBUG    | FUZZY | pos=(274,269) | angle=10.7° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:50.340 | DEBUG    | FUZZY | pos=(277,269) | angle=10.3° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:50.357 | DEBUG    | FUZZY | pos=(280,270) | angle=9.9° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:50.374 | DEBUG    | FUZZY | pos=(283,270) | angle=9.4° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:50.390 | INFO     | COIN_GAUCHE | G=14 D=0 delta=-14 → virage 90° gauche
+10:45:50.407 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=5.0° | remaining=86.0° | bits=2 | bits_mask=0000011000000000
+10:45:50.407 | INFO     | TURN_OK | angle=5.0° | bits=2 → ligne retrouvée, rotation arrêtée
+10:45:50.424 | DEBUG    | FUZZY | pos=(286,271) | angle=5.0° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:50.441 | DEBUG    | FUZZY | pos=(289,271) | angle=4.6° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:50.458 | DEBUG    | FUZZY | pos=(292,271) | angle=4.2° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:50.474 | DEBUG    | FUZZY | pos=(295,272) | angle=3.7° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:50.492 | DEBUG    | FUZZY | pos=(298,272) | angle=3.3° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:50.492 | INFO     | CASE | col=5 row=4 | couleur=BLANC | séquence=[N → B → N → B → N → B → N → B → N → B]
+10:45:50.508 | DEBUG    | FUZZY | pos=(301,272) | angle=2.9° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:50.524 | DEBUG    | FUZZY | pos=(304,272) | angle=2.4° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:50.540 | DEBUG    | FUZZY | pos=(307,272) | angle=2.0° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:50.558 | DEBUG    | FUZZY | pos=(310,272) | angle=1.6° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:50.574 | DEBUG    | FUZZY | pos=(313,272) | angle=1.2° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:50.589 | DEBUG    | FUZZY | pos=(316,272) | angle=0.7° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.50°
+10:45:50.606 | DEBUG    | FUZZY | pos=(319,273) | angle=0.2° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.51°
+10:45:50.622 | DEBUG    | FUZZY | pos=(322,273) | angle=-0.3° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.639 | DEBUG    | FUZZY | pos=(325,273) | angle=-0.8° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.656 | DEBUG    | FUZZY | pos=(328,272) | angle=-1.3° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.673 | DEBUG    | FUZZY | pos=(331,272) | angle=-1.8° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.690 | DEBUG    | FUZZY | pos=(334,272) | angle=-2.4° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.706 | DEBUG    | FUZZY | pos=(337,272) | angle=-2.9° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.722 | DEBUG    | FUZZY | pos=(340,272) | angle=-3.4° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.739 | DEBUG    | FUZZY | pos=(343,272) | angle=-3.9° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.755 | DEBUG    | FUZZY | pos=(346,272) | angle=-4.4° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.772 | DEBUG    | FUZZY | pos=(349,271) | angle=-4.9° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.788 | DEBUG    | FUZZY | pos=(352,271) | angle=-5.5° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.805 | DEBUG    | FUZZY | pos=(355,271) | angle=-6.0° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:50.822 | DEBUG    | FUZZY | pos=(358,271) | angle=-6.5° | G=3 D=0 delta=-3 | mu_N=0.01 mu_Z=0.90 mu_P=0.00 | da=-0.26°
+10:45:50.823 | INFO     | CASE | col=6 row=4 | couleur=NOIR  | séquence=[N → B → N → B → N → B → N → B → N → B → N]
+10:45:50.839 | DEBUG    | FUZZY | pos=(361,270) | angle=-6.8° | G=3 D=0 delta=-3 | mu_N=0.01 mu_Z=0.90 mu_P=0.00 | da=-0.21°
+10:45:50.858 | DEBUG    | FUZZY | pos=(364,270) | angle=-7.0° | G=3 D=0 delta=-3 | mu_N=0.01 mu_Z=0.90 mu_P=0.00 | da=-0.20°
+10:45:50.873 | DEBUG    | FUZZY | pos=(367,270) | angle=-7.2° | G=3 D=0 delta=-3 | mu_N=0.01 mu_Z=0.90 mu_P=0.00 | da=-0.19°
+10:45:50.890 | DEBUG    | FUZZY | pos=(370,269) | angle=-7.4° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.14°
+10:45:50.906 | DEBUG    | FUZZY | pos=(373,269) | angle=-7.5° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:50.923 | DEBUG    | FUZZY | pos=(375,268) | angle=-7.6° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:50.940 | DEBUG    | FUZZY | pos=(378,268) | angle=-7.7° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:50.956 | DEBUG    | FUZZY | pos=(381,268) | angle=-7.9° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:50.974 | DEBUG    | FUZZY | pos=(384,267) | angle=-8.0° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:50.990 | DEBUG    | FUZZY | pos=(387,267) | angle=-8.1° | G=3 D=225 delta=222 | mu_N=0.00 mu_Z=0.00 mu_P=0.87 | da=11.97°
+10:45:51.009 | DEBUG    | FUZZY | pos=(390,266) | angle=3.9° | G=3 D=0 delta=-3 | mu_N=0.01 mu_Z=0.90 mu_P=0.00 | da=2.24°
+10:45:51.025 | DEBUG    | FUZZY | pos=(393,267) | angle=6.1° | G=7 D=3 delta=-4 | mu_N=0.02 mu_Z=0.87 mu_P=0.00 | da=0.23°
+10:45:51.040 | DEBUG    | FUZZY | pos=(396,267) | angle=6.3° | G=7 D=63 delta=56 | mu_N=0.00 mu_Z=0.00 mu_P=0.22 | da=12.05°
+10:45:51.056 | DEBUG    | FUZZY | pos=(399,267) | angle=18.4° | G=15 D=7 delta=-8 | mu_N=0.03 mu_Z=0.73 mu_P=0.00 | da=1.92°
+10:45:51.073 | DEBUG    | FUZZY | pos=(402,268) | angle=20.3° | G=7 D=15 delta=8 | mu_N=0.00 mu_Z=0.73 mu_P=0.03 | da=0.88°
+10:45:51.088 | DEBUG    | FUZZY | pos=(405,269) | angle=21.2° | G=7 D=31 delta=24 | mu_N=0.00 mu_Z=0.20 mu_P=0.09 | da=4.02°
+10:45:51.105 | INFO     | COIN_DROIT | G=1 D=31 delta=30 → virage 90° droite
+10:45:51.122 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=29.2° | remaining=86.0° | bits=6 | bits_mask=0000001111110000
+10:45:51.122 | INFO     | TURN_OK | angle=29.2° | bits=6 → ligne retrouvée, rotation arrêtée
+10:45:51.137 | DEBUG    | FUZZY | pos=(408,270) | angle=29.2° | G=3 D=15 delta=12 | mu_N=0.00 mu_Z=0.60 mu_P=0.05 | da=1.68°
+10:45:51.152 | INFO     | COIN_DROIT | G=1 D=15 delta=14 → virage 90° droite
+10:45:51.181 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=34.9° | remaining=86.0° | bits=5 | bits_mask=0000000111110000
+10:45:51.181 | INFO     | TURN_OK | angle=34.9° | bits=5 → ligne retrouvée, rotation arrêtée
+10:45:51.192 | INFO     | COIN_DROIT | G=1 D=15 delta=14 → virage 90° droite
+10:45:51.206 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=38.9° | remaining=86.0° | bits=4 | bits_mask=0000000111100000
+10:45:51.207 | INFO     | TURN_OK | angle=38.9° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:51.222 | DEBUG    | FUZZY | pos=(410,272) | angle=38.9° | G=1 D=7 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.68°
+10:45:51.240 | INFO     | COIN_DROIT | G=1 D=15 delta=14 → virage 90° droite
+10:45:51.256 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=43.5° | remaining=86.0° | bits=4 | bits_mask=0000000111100000
+10:45:51.256 | INFO     | TURN_OK | angle=43.5° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:51.273 | DEBUG    | FUZZY | pos=(413,274) | angle=43.5° | G=1 D=7 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.48°
+10:45:51.291 | INFO     | COIN_DROIT | G=0 D=15 delta=15 → virage 90° droite
+10:45:51.307 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=48.0° | remaining=86.0° | bits=4 | bits_mask=0000000111100000
+10:45:51.307 | INFO     | TURN_OK | angle=48.0° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:51.324 | DEBUG    | FUZZY | pos=(415,276) | angle=48.0° | G=1 D=7 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.44°
+10:45:51.342 | DEBUG    | FUZZY | pos=(417,278) | angle=48.5° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.50°
+10:45:51.358 | INFO     | COIN_DROIT | G=0 D=15 delta=15 → virage 90° droite
+10:45:51.374 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=53.0° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:51.375 | INFO     | TURN_OK | angle=53.0° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:51.392 | DEBUG    | FUZZY | pos=(419,280) | angle=53.0° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:51.392 | INFO     | CASE | col=7 row=4 | couleur=BLANC | séquence=[N → B → N → B → N → B → N → B → N → B → N → B]
+10:45:51.408 | INFO     | COIN_DROIT | G=0 D=15 delta=15 → virage 90° droite
+10:45:51.425 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=57.5° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:51.425 | INFO     | TURN_OK | angle=57.5° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:51.440 | DEBUG    | FUZZY | pos=(421,283) | angle=57.5° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:51.457 | DEBUG    | FUZZY | pos=(422,285) | angle=58.0° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:51.473 | INFO     | COIN_DROIT | G=0 D=15 delta=15 → virage 90° droite
+10:45:51.489 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=62.5° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:51.489 | INFO     | TURN_OK | angle=62.5° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:51.507 | DEBUG    | FUZZY | pos=(424,288) | angle=62.5° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:51.523 | DEBUG    | FUZZY | pos=(425,290) | angle=63.0° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:51.539 | INFO     | COIN_DROIT | G=0 D=14 delta=14 → virage 90° droite
+10:45:51.555 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=67.5° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:51.556 | INFO     | TURN_OK | angle=67.5° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:51.571 | DEBUG    | FUZZY | pos=(427,293) | angle=67.5° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:51.586 | DEBUG    | FUZZY | pos=(428,296) | angle=68.1° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:51.604 | DEBUG    | FUZZY | pos=(429,298) | angle=68.6° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.45°
+10:45:51.604 | INFO     | CASE | col=7 row=5 | couleur=NOIR  | séquence=[N → B → N → B → N → B → N → B → N → B → N → B → N]
+10:45:51.622 | INFO     | COIN_DROIT | G=0 D=14 delta=14 → virage 90° droite
+10:45:51.637 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=73.0° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:51.637 | INFO     | TURN_OK | angle=73.0° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:51.653 | DEBUG    | FUZZY | pos=(430,301) | angle=73.0° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.50°
+10:45:51.670 | DEBUG    | FUZZY | pos=(431,304) | angle=73.5° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.44°
+10:45:51.686 | DEBUG    | FUZZY | pos=(432,307) | angle=74.0° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:51.703 | INFO     | COIN_DROIT | G=0 D=14 delta=14 → virage 90° droite
+10:45:51.719 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=78.4° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:51.720 | INFO     | TURN_OK | angle=78.4° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:51.736 | DEBUG    | FUZZY | pos=(433,310) | angle=78.4° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.50°
+10:45:51.754 | DEBUG    | FUZZY | pos=(433,313) | angle=78.9° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.44°
+10:45:51.770 | DEBUG    | FUZZY | pos=(434,316) | angle=79.3° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:51.787 | DEBUG    | FUZZY | pos=(434,319) | angle=79.8° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:51.802 | DEBUG    | FUZZY | pos=(435,322) | angle=80.2° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:51.819 | DEBUG    | FUZZY | pos=(435,325) | angle=80.6° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:51.835 | INFO     | COIN_DROIT | G=0 D=14 delta=14 → virage 90° droite
+10:45:51.852 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=85.1° | remaining=86.0° | bits=2 | bits_mask=0000000001100000
+10:45:51.853 | INFO     | TURN_OK | angle=85.1° | bits=2 → ligne retrouvée, rotation arrêtée
+10:45:51.869 | DEBUG    | FUZZY | pos=(436,328) | angle=85.1° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:51.886 | DEBUG    | FUZZY | pos=(436,331) | angle=85.5° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:51.903 | DEBUG    | FUZZY | pos=(436,334) | angle=85.9° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:51.920 | DEBUG    | FUZZY | pos=(437,337) | angle=86.4° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:51.935 | DEBUG    | FUZZY | pos=(437,340) | angle=86.8° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:51.953 | DEBUG    | FUZZY | pos=(437,343) | angle=87.2° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:51.968 | DEBUG    | FUZZY | pos=(437,346) | angle=87.6° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:51.985 | DEBUG    | FUZZY | pos=(437,349) | angle=88.1° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:52.001 | DEBUG    | FUZZY | pos=(437,352) | angle=88.5° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:52.016 | DEBUG    | FUZZY | pos=(437,355) | angle=88.9° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.50°
+10:45:52.034 | DEBUG    | FUZZY | pos=(437,358) | angle=89.4° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.51°
+10:45:52.034 | INFO     | CASE | col=7 row=6 | couleur=BLANC | séquence=[N → B → N → B → N → B → N → B → N → B → N → B → N → B]
+10:45:52.052 | DEBUG    | FUZZY | pos=(437,361) | angle=89.9° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:52.068 | DEBUG    | FUZZY | pos=(437,364) | angle=90.5° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:52.085 | DEBUG    | FUZZY | pos=(437,367) | angle=91.0° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:52.101 | DEBUG    | FUZZY | pos=(437,370) | angle=91.5° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:52.116 | DEBUG    | FUZZY | pos=(437,373) | angle=92.0° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:52.132 | DEBUG    | FUZZY | pos=(437,376) | angle=92.5° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:52.150 | INFO     | COIN_DROIT | G=0 D=63 delta=63 → virage 90° droite
+10:45:52.166 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=97.1° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:52.167 | INFO     | TURN_OK | angle=97.1° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:52.184 | DEBUG    | FUZZY | pos=(437,379) | angle=97.1° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:52.202 | INFO     | COIN_DROIT | G=0 D=31 delta=31 → virage 90° droite
+10:45:52.219 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=101.6° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:52.219 | INFO     | TURN_OK | angle=101.6° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:52.236 | DEBUG    | FUZZY | pos=(437,382) | angle=101.6° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:52.252 | INFO     | COIN_DROIT | G=1 D=31 delta=30 → virage 90° droite
+10:45:52.268 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=106.1° | remaining=86.0° | bits=5 | bits_mask=0000000111110000
+10:45:52.269 | INFO     | TURN_OK | angle=106.1° | bits=5 → ligne retrouvée, rotation arrêtée
+10:45:52.285 | INFO     | COIN_DROIT | G=1 D=15 delta=14 → virage 90° droite
+10:45:52.301 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=110.1° | remaining=86.0° | bits=4 | bits_mask=0000000111100000
+10:45:52.301 | INFO     | TURN_OK | angle=110.1° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:52.316 | DEBUG    | FUZZY | pos=(436,384) | angle=110.1° | G=1 D=7 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.45°
+10:45:52.333 | INFO     | COIN_DROIT | G=1 D=15 delta=14 → virage 90° droite
+10:45:52.349 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=114.5° | remaining=86.0° | bits=4 | bits_mask=0000000111100000
+10:45:52.349 | INFO     | TURN_OK | angle=114.5° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:52.365 | DEBUG    | FUZZY | pos=(435,387) | angle=114.5° | G=1 D=7 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:52.382 | INFO     | COIN_DROIT | G=1 D=15 delta=14 → virage 90° droite
+10:45:52.401 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=119.0° | remaining=86.0° | bits=4 | bits_mask=0000000111100000
+10:45:52.401 | INFO     | TURN_OK | angle=119.0° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:52.418 | DEBUG    | FUZZY | pos=(434,390) | angle=119.0° | G=1 D=7 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:52.436 | INFO     | COIN_DROIT | G=1 D=15 delta=14 → virage 90° droite
+10:45:52.453 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=123.4° | remaining=86.0° | bits=4 | bits_mask=0000000111100000
+10:45:52.453 | INFO     | TURN_OK | angle=123.4° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:52.468 | DEBUG    | FUZZY | pos=(432,393) | angle=123.4° | G=1 D=7 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:52.484 | INFO     | COIN_DROIT | G=1 D=15 delta=14 → virage 90° droite
+10:45:52.502 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=127.8° | remaining=86.0° | bits=4 | bits_mask=0000000111100000
+10:45:52.502 | INFO     | TURN_OK | angle=127.8° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:52.519 | DEBUG    | FUZZY | pos=(431,395) | angle=127.8° | G=1 D=7 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:52.536 | INFO     | COIN_DROIT | G=1 D=15 delta=14 → virage 90° droite
+10:45:52.552 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=132.3° | remaining=86.0° | bits=4 | bits_mask=0000000111100000
+10:45:52.552 | INFO     | TURN_OK | angle=132.3° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:52.570 | DEBUG    | FUZZY | pos=(429,398) | angle=132.3° | G=1 D=7 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:52.585 | INFO     | COIN_DROIT | G=0 D=15 delta=15 → virage 90° droite
+10:45:52.604 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=136.7° | remaining=86.0° | bits=4 | bits_mask=0000000111100000
+10:45:52.604 | INFO     | TURN_OK | angle=136.7° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:52.619 | DEBUG    | FUZZY | pos=(427,400) | angle=136.7° | G=1 D=7 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:52.635 | INFO     | COIN_DROIT | G=0 D=15 delta=15 → virage 90° droite
+10:45:52.651 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=141.1° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:52.652 | INFO     | TURN_OK | angle=141.1° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:52.668 | DEBUG    | FUZZY | pos=(425,402) | angle=141.1° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.50°
+10:45:52.685 | DEBUG    | FUZZY | pos=(422,404) | angle=141.6° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.51°
+10:45:52.686 | INFO     | CASE | col=6 row=6 | couleur=NOIR  | séquence=[N → B → N → B → N → B → N → B → N → B → N → B → N → B → N]
+10:45:52.702 | INFO     | COIN_DROIT | G=0 D=15 delta=15 → virage 90° droite
+10:45:52.719 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=146.1° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:52.719 | INFO     | TURN_OK | angle=146.1° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:52.735 | DEBUG    | FUZZY | pos=(420,406) | angle=146.1° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:52.752 | DEBUG    | FUZZY | pos=(417,407) | angle=146.6° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:52.769 | INFO     | COIN_DROIT | G=0 D=14 delta=14 → virage 90° droite
+10:45:52.786 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=151.2° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:52.786 | INFO     | TURN_OK | angle=151.2° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:52.803 | DEBUG    | FUZZY | pos=(415,409) | angle=151.2° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:52.820 | INFO     | COIN_DROIT | G=0 D=15 delta=15 → virage 90° droite
+10:45:52.836 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=155.7° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:52.836 | INFO     | TURN_OK | angle=155.7° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:52.853 | DEBUG    | FUZZY | pos=(412,410) | angle=155.7° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:52.869 | DEBUG    | FUZZY | pos=(410,412) | angle=156.2° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.52°
+10:45:52.886 | DEBUG    | FUZZY | pos=(407,413) | angle=156.7° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.45°
+10:45:52.903 | INFO     | COIN_DROIT | G=0 D=14 delta=14 → virage 90° droite
+10:45:52.919 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=161.2° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:52.919 | INFO     | TURN_OK | angle=161.2° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:52.934 | DEBUG    | FUZZY | pos=(404,414) | angle=161.2° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.50°
+10:45:52.950 | DEBUG    | FUZZY | pos=(401,415) | angle=161.7° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.44°
+10:45:52.969 | DEBUG    | FUZZY | pos=(398,416) | angle=162.1° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:52.985 | INFO     | COIN_DROIT | G=0 D=14 delta=14 → virage 90° droite
+10:45:53.002 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=166.5° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:53.003 | INFO     | TURN_OK | angle=166.5° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:53.018 | DEBUG    | FUZZY | pos=(396,417) | angle=166.5° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.50°
+10:45:53.035 | DEBUG    | FUZZY | pos=(393,417) | angle=167.0° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.44°
+10:45:53.051 | DEBUG    | FUZZY | pos=(390,418) | angle=167.5° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:53.068 | DEBUG    | FUZZY | pos=(387,419) | angle=167.9° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:53.085 | INFO     | COIN_DROIT | G=0 D=14 delta=14 → virage 90° droite
+10:45:53.101 | DEBUG    | TURN | dir=+1 | step=4.0° | angle=172.3° | remaining=86.0° | bits=3 | bits_mask=0000000011100000
+10:45:53.101 | INFO     | TURN_OK | angle=172.3° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:53.117 | DEBUG    | FUZZY | pos=(384,419) | angle=172.3° | G=0 D=7 delta=7 | mu_N=0.00 mu_Z=0.77 mu_P=0.03 | da=0.50°
+10:45:53.135 | DEBUG    | FUZZY | pos=(381,420) | angle=172.8° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.44°
+10:45:53.135 | INFO     | CASE | col=6 row=7 | couleur=BLANC | séquence=[N → B → N → B → N → B → N → B → N → B → N → B → N → B → N → B]
+10:45:53.151 | DEBUG    | FUZZY | pos=(378,420) | angle=173.3° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:53.169 | DEBUG    | FUZZY | pos=(375,421) | angle=173.7° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:53.187 | DEBUG    | FUZZY | pos=(372,421) | angle=174.2° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:53.203 | DEBUG    | FUZZY | pos=(369,421) | angle=174.6° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:53.219 | DEBUG    | FUZZY | pos=(366,421) | angle=175.0° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:53.236 | DEBUG    | FUZZY | pos=(363,422) | angle=175.4° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:53.236 | INFO     | CASE | col=5 row=7 | couleur=NOIR  | séquence=[B → N → B → N → B → N → B → N → B → N → B → N → B → N → B → N]
+10:45:53.253 | DEBUG    | FUZZY | pos=(360,422) | angle=175.9° | G=0 D=6 delta=6 | mu_N=0.00 mu_Z=0.80 mu_P=0.02 | da=0.43°
+10:45:53.269 | DEBUG    | FUZZY | pos=(357,422) | angle=176.3° | G=63 D=7 delta=-56 | mu_N=0.22 mu_Z=0.00 mu_P=0.00 | da=-11.91°
+10:45:53.285 | DEBUG    | FUZZY | pos=(354,422) | angle=164.4° | G=7 D=15 delta=8 | mu_N=0.00 mu_Z=0.73 mu_P=0.03 | da=-1.89°
+10:45:53.301 | DEBUG    | FUZZY | pos=(351,423) | angle=162.5° | G=15 D=15 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=-0.38°
+10:45:53.317 | DEBUG    | FUZZY | pos=(348,424) | angle=162.1° | G=31 D=15 delta=-16 | mu_N=0.06 mu_Z=0.47 mu_P=0.00 | da=-1.50°
+10:45:53.333 | DEBUG    | FUZZY | pos=(345,425) | angle=160.6° | G=63 D=3 delta=-60 | mu_N=0.24 mu_Z=0.00 mu_P=0.00 | da=-12.30°
+10:45:53.348 | INFO     | COIN_GAUCHE | G=15 D=1 delta=-14 → virage 90° gauche
+10:45:53.365 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=144.3° | remaining=86.0° | bits=4 | bits_mask=0000011110000000
+10:45:53.365 | INFO     | TURN_OK | angle=144.3° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:53.382 | DEBUG    | FUZZY | pos=(343,426) | angle=144.3° | G=7 D=1 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-2.80°
+10:45:53.399 | DEBUG    | FUZZY | pos=(340,428) | angle=141.5° | G=7 D=1 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.90°
+10:45:53.415 | INFO     | COIN_GAUCHE | G=15 D=0 delta=-15 → virage 90° gauche
+10:45:53.433 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=136.6° | remaining=86.0° | bits=4 | bits_mask=0000011110000000
+10:45:53.433 | INFO     | TURN_OK | angle=136.6° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:53.449 | DEBUG    | FUZZY | pos=(338,430) | angle=136.6° | G=7 D=1 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.52°
+10:45:53.465 | INFO     | COIN_GAUCHE | G=15 D=0 delta=-15 → virage 90° gauche
+10:45:53.481 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=132.1° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:53.482 | INFO     | TURN_OK | angle=132.1° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:53.500 | DEBUG    | FUZZY | pos=(336,432) | angle=132.1° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:53.518 | INFO     | COIN_GAUCHE | G=15 D=0 delta=-15 → virage 90° gauche
+10:45:53.536 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=127.6° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:53.536 | INFO     | TURN_OK | angle=127.6° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:53.552 | DEBUG    | FUZZY | pos=(334,434) | angle=127.6° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:53.566 | DEBUG    | FUZZY | pos=(332,436) | angle=127.0° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:53.582 | INFO     | COIN_GAUCHE | G=15 D=0 delta=-15 → virage 90° gauche
+10:45:53.599 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=122.5° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:53.600 | INFO     | TURN_OK | angle=122.5° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:53.616 | DEBUG    | FUZZY | pos=(330,439) | angle=122.5° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:53.633 | DEBUG    | FUZZY | pos=(328,441) | angle=122.0° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:53.650 | INFO     | COIN_GAUCHE | G=15 D=0 delta=-15 → virage 90° gauche
+10:45:53.666 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=117.5° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:53.666 | INFO     | TURN_OK | angle=117.5° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:53.683 | DEBUG    | FUZZY | pos=(327,444) | angle=117.5° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:53.700 | DEBUG    | FUZZY | pos=(325,446) | angle=117.0° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:53.717 | INFO     | COIN_GAUCHE | G=14 D=0 delta=-14 → virage 90° gauche
+10:45:53.735 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=112.5° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:53.735 | INFO     | TURN_OK | angle=112.5° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:53.750 | DEBUG    | FUZZY | pos=(324,449) | angle=112.5° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:53.767 | DEBUG    | FUZZY | pos=(323,452) | angle=111.9° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:53.784 | INFO     | COIN_GAUCHE | G=14 D=0 delta=-14 → virage 90° gauche
+10:45:53.800 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=107.4° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:53.800 | INFO     | TURN_OK | angle=107.4° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:53.817 | DEBUG    | FUZZY | pos=(322,455) | angle=107.4° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:53.833 | DEBUG    | FUZZY | pos=(321,457) | angle=106.9° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:53.849 | DEBUG    | FUZZY | pos=(320,460) | angle=106.4° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.45°
+10:45:53.866 | DEBUG    | FUZZY | pos=(319,463) | angle=105.9° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:53.882 | INFO     | COIN_GAUCHE | G=14 D=0 delta=-14 → virage 90° gauche
+10:45:53.900 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=101.5° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:53.900 | INFO     | TURN_OK | angle=101.5° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:53.916 | DEBUG    | FUZZY | pos=(318,466) | angle=101.5° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.50°
+10:45:53.933 | DEBUG    | FUZZY | pos=(318,469) | angle=101.0° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.44°
+10:45:53.949 | DEBUG    | FUZZY | pos=(317,472) | angle=100.6° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:53.966 | DEBUG    | FUZZY | pos=(317,475) | angle=100.1° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:53.982 | DEBUG    | FUZZY | pos=(316,478) | angle=99.7° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:53.983 | INFO     | CASE | col=5 row=8 | couleur=BLANC | séquence=[N → B → N → B → N → B → N → B → N → B → N → B → N → B → N → B]
+10:45:54.000 | DEBUG    | FUZZY | pos=(316,481) | angle=99.3° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:54.016 | INFO     | COIN_GAUCHE | G=14 D=0 delta=-14 → virage 90° gauche
+10:45:54.033 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=94.8° | remaining=86.0° | bits=2 | bits_mask=0000011000000000
+10:45:54.033 | INFO     | TURN_OK | angle=94.8° | bits=2 → ligne retrouvée, rotation arrêtée
+10:45:54.050 | DEBUG    | FUZZY | pos=(315,484) | angle=94.8° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:54.066 | DEBUG    | FUZZY | pos=(315,487) | angle=94.4° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:54.083 | DEBUG    | FUZZY | pos=(315,490) | angle=94.0° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:54.099 | DEBUG    | FUZZY | pos=(314,493) | angle=93.6° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:54.116 | DEBUG    | FUZZY | pos=(314,496) | angle=93.1° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:54.132 | DEBUG    | FUZZY | pos=(314,499) | angle=92.7° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:54.148 | DEBUG    | FUZZY | pos=(314,502) | angle=92.3° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:54.163 | DEBUG    | FUZZY | pos=(314,505) | angle=91.8° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:54.179 | DEBUG    | FUZZY | pos=(314,508) | angle=91.4° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:54.196 | DEBUG    | FUZZY | pos=(314,511) | angle=91.0° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:54.212 | DEBUG    | FUZZY | pos=(314,514) | angle=90.6° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.50°
+10:45:54.228 | DEBUG    | FUZZY | pos=(314,517) | angle=90.1° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.51°
+10:45:54.245 | DEBUG    | FUZZY | pos=(314,520) | angle=89.5° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:54.262 | DEBUG    | FUZZY | pos=(314,523) | angle=89.0° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:54.278 | DEBUG    | FUZZY | pos=(314,526) | angle=88.5° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:54.294 | DEBUG    | FUZZY | pos=(314,529) | angle=88.0° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:54.309 | DEBUG    | FUZZY | pos=(314,532) | angle=87.5° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:54.324 | DEBUG    | FUZZY | pos=(314,535) | angle=86.9° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:54.342 | DEBUG    | FUZZY | pos=(314,538) | angle=86.4° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:54.342 | INFO     | CASE | col=5 row=9 | couleur=NOIR  | séquence=[B → N → B → N → B → N → B → N → B → N → B → N → B → N → B → N]
+10:45:54.358 | DEBUG    | FUZZY | pos=(314,541) | angle=85.9° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:54.376 | DEBUG    | FUZZY | pos=(314,544) | angle=85.4° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:54.391 | DEBUG    | FUZZY | pos=(315,547) | angle=84.9° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:54.408 | DEBUG    | FUZZY | pos=(315,550) | angle=84.4° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:54.425 | DEBUG    | FUZZY | pos=(315,553) | angle=83.8° | G=3 D=0 delta=-3 | mu_N=0.01 mu_Z=0.90 mu_P=0.00 | da=-0.26°
+10:45:54.441 | DEBUG    | FUZZY | pos=(316,556) | angle=83.6° | G=3 D=0 delta=-3 | mu_N=0.01 mu_Z=0.90 mu_P=0.00 | da=-0.21°
+10:45:54.458 | DEBUG    | FUZZY | pos=(316,559) | angle=83.4° | G=3 D=0 delta=-3 | mu_N=0.01 mu_Z=0.90 mu_P=0.00 | da=-0.20°
+10:45:54.476 | DEBUG    | FUZZY | pos=(316,562) | angle=83.2° | G=3 D=0 delta=-3 | mu_N=0.01 mu_Z=0.90 mu_P=0.00 | da=-0.19°
+10:45:54.493 | DEBUG    | FUZZY | pos=(317,565) | angle=83.0° | G=3 D=0 delta=-3 | mu_N=0.01 mu_Z=0.90 mu_P=0.00 | da=-0.19°
+10:45:54.508 | DEBUG    | FUZZY | pos=(317,568) | angle=82.8° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.14°
+10:45:54.526 | DEBUG    | FUZZY | pos=(317,571) | angle=82.6° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:54.543 | DEBUG    | FUZZY | pos=(318,574) | angle=82.5° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:54.559 | DEBUG    | FUZZY | pos=(318,577) | angle=82.4° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:54.577 | DEBUG    | FUZZY | pos=(319,580) | angle=82.3° | G=7 D=1 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.37°
+10:45:54.594 | INFO     | COIN_GAUCHE | G=63 D=1 delta=-62 → virage 90° gauche
+10:45:54.610 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=77.9° | remaining=86.0° | bits=5 | bits_mask=0000111110000000
+10:45:54.610 | INFO     | TURN_OK | angle=77.9° | bits=5 → ligne retrouvée, rotation arrêtée
+10:45:54.626 | INFO     | COIN_GAUCHE | G=15 D=1 delta=-14 → virage 90° gauche
+10:45:54.642 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=73.9° | remaining=86.0° | bits=5 | bits_mask=0000011111000000
+10:45:54.642 | INFO     | TURN_OK | angle=73.9° | bits=5 → ligne retrouvée, rotation arrêtée
+10:45:54.660 | DEBUG    | FUZZY | pos=(319,582) | angle=73.9° | G=7 D=3 delta=-4 | mu_N=0.02 mu_Z=0.87 mu_P=0.00 | da=-0.29°
+10:45:54.675 | DEBUG    | FUZZY | pos=(320,585) | angle=73.6° | G=15 D=3 delta=-12 | mu_N=0.05 mu_Z=0.60 mu_P=0.00 | da=-0.93°
+10:45:54.691 | DEBUG    | FUZZY | pos=(321,588) | angle=72.7° | G=31 D=3 delta=-28 | mu_N=0.11 mu_Z=0.07 mu_P=0.00 | da=-7.65°
+10:45:54.706 | DEBUG    | FUZZY | pos=(322,591) | angle=65.0° | G=15 D=3 delta=-12 | mu_N=0.05 mu_Z=0.60 mu_P=0.00 | da=-2.40°
+10:45:54.723 | INFO     | COIN_GAUCHE | G=31 D=1 delta=-30 → virage 90° gauche
+10:45:54.740 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=58.6° | remaining=86.0° | bits=5 | bits_mask=0000111110000000
+10:45:54.740 | INFO     | TURN_OK | angle=58.6° | bits=5 → ligne retrouvée, rotation arrêtée
+10:45:54.757 | INFO     | COIN_GAUCHE | G=15 D=1 delta=-14 → virage 90° gauche
+10:45:54.773 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=54.6° | remaining=86.0° | bits=4 | bits_mask=0000011110000000
+10:45:54.774 | INFO     | TURN_OK | angle=54.6° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:54.790 | DEBUG    | FUZZY | pos=(323,594) | angle=54.6° | G=7 D=1 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.82°
+10:45:54.807 | INFO     | COIN_GAUCHE | G=15 D=1 delta=-14 → virage 90° gauche
+10:45:54.824 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=49.8° | remaining=86.0° | bits=4 | bits_mask=0000011110000000
+10:45:54.824 | INFO     | TURN_OK | angle=49.8° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:54.842 | DEBUG    | FUZZY | pos=(325,596) | angle=49.8° | G=7 D=1 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.51°
+10:45:54.858 | INFO     | COIN_GAUCHE | G=15 D=0 delta=-15 → virage 90° gauche
+10:45:54.874 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=45.3° | remaining=86.0° | bits=4 | bits_mask=0000011110000000
+10:45:54.875 | INFO     | TURN_OK | angle=45.3° | bits=4 → ligne retrouvée, rotation arrêtée
+10:45:54.892 | DEBUG    | FUZZY | pos=(326,599) | angle=45.3° | G=7 D=1 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.44°
+10:45:54.892 | INFO     | CASE | col=5 row=10 | couleur=BLANC | séquence=[N → B → N → B → N → B → N → B → N → B → N → B → N → B → N → B]
+10:45:54.909 | INFO     | COIN_GAUCHE | G=15 D=0 delta=-15 → virage 90° gauche
+10:45:54.925 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=40.9° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:54.925 | INFO     | TURN_OK | angle=40.9° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:54.940 | DEBUG    | FUZZY | pos=(329,601) | angle=40.9° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.50°
+10:45:54.957 | DEBUG    | FUZZY | pos=(331,603) | angle=40.3° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:54.974 | INFO     | COIN_GAUCHE | G=15 D=0 delta=-15 → virage 90° gauche
+10:45:54.991 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=35.8° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:54.991 | INFO     | TURN_OK | angle=35.8° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:55.008 | DEBUG    | FUZZY | pos=(333,605) | angle=35.8° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.024 | INFO     | COIN_GAUCHE | G=15 D=0 delta=-15 → virage 90° gauche
+10:45:55.041 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=31.3° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:55.042 | INFO     | TURN_OK | angle=31.3° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:55.059 | DEBUG    | FUZZY | pos=(336,606) | angle=31.3° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.076 | DEBUG    | FUZZY | pos=(338,608) | angle=30.8° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.093 | INFO     | COIN_GAUCHE | G=15 D=0 delta=-15 → virage 90° gauche
+10:45:55.110 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=26.3° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:55.111 | INFO     | TURN_OK | angle=26.3° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:55.126 | DEBUG    | FUZZY | pos=(341,609) | angle=26.3° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.143 | DEBUG    | FUZZY | pos=(343,611) | angle=25.8° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.160 | INFO     | COIN_GAUCHE | G=14 D=0 delta=-14 → virage 90° gauche
+10:45:55.175 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=21.2° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:55.175 | INFO     | TURN_OK | angle=21.2° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:55.191 | DEBUG    | FUZZY | pos=(346,612) | angle=21.2° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.208 | DEBUG    | FUZZY | pos=(349,613) | angle=20.7° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.225 | DEBUG    | FUZZY | pos=(352,614) | angle=20.2° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.45°
+10:45:55.242 | INFO     | COIN_GAUCHE | G=14 D=0 delta=-14 → virage 90° gauche
+10:45:55.258 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=15.8° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:55.258 | INFO     | TURN_OK | angle=15.8° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:55.275 | DEBUG    | FUZZY | pos=(355,615) | angle=15.8° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.50°
+10:45:55.291 | DEBUG    | FUZZY | pos=(357,616) | angle=15.3° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.292 | INFO     | CASE | col=6 row=10 | couleur=NOIR  | séquence=[B → N → B → N → B → N → B → N → B → N → B → N → B → N → B → N]
+10:45:55.309 | DEBUG    | FUZZY | pos=(360,617) | angle=14.7° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.45°
+10:45:55.324 | DEBUG    | FUZZY | pos=(363,618) | angle=14.3° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:55.340 | INFO     | COIN_GAUCHE | G=14 D=0 delta=-14 → virage 90° gauche
+10:45:55.358 | DEBUG    | TURN | dir=-1 | step=4.0° | angle=9.9° | remaining=86.0° | bits=3 | bits_mask=0000011100000000
+10:45:55.358 | INFO     | TURN_OK | angle=9.9° | bits=3 → ligne retrouvée, rotation arrêtée
+10:45:55.376 | DEBUG    | FUZZY | pos=(366,618) | angle=9.9° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.50°
+10:45:55.392 | DEBUG    | FUZZY | pos=(369,619) | angle=9.4° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.44°
+10:45:55.409 | DEBUG    | FUZZY | pos=(372,619) | angle=8.9° | G=6 D=0 delta=-6 | mu_N=0.02 mu_Z=0.80 mu_P=0.00 | da=-0.43°
+10:45:55.423 | DEBUG    | FUZZY | pos=(375,619) | angle=8.5° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.50°
+10:45:55.452 | DEBUG    | FUZZY | pos=(378,619) | angle=8.0° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.463 | DEBUG    | FUZZY | pos=(381,619) | angle=7.5° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.478 | DEBUG    | FUZZY | pos=(384,619) | angle=7.0° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.493 | DEBUG    | FUZZY | pos=(387,619) | angle=6.4° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.508 | DEBUG    | FUZZY | pos=(390,619) | angle=5.9° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.526 | DEBUG    | FUZZY | pos=(393,619) | angle=5.4° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.543 | DEBUG    | FUZZY | pos=(396,619) | angle=4.9° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.561 | DEBUG    | FUZZY | pos=(399,619) | angle=4.4° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.578 | DEBUG    | FUZZY | pos=(402,619) | angle=3.8° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.595 | DEBUG    | FUZZY | pos=(405,619) | angle=3.3° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.612 | DEBUG    | FUZZY | pos=(408,619) | angle=2.8° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.630 | DEBUG    | FUZZY | pos=(411,619) | angle=2.3° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.647 | DEBUG    | FUZZY | pos=(414,619) | angle=1.8° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.663 | DEBUG    | FUZZY | pos=(417,619) | angle=1.2° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.679 | DEBUG    | FUZZY | pos=(420,619) | angle=0.7° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.679 | INFO     | CASE | col=7 row=10 | couleur=BLANC | séquence=[N → B → N → B → N → B → N → B → N → B → N → B → N → B → N → B]
+10:45:55.696 | DEBUG    | FUZZY | pos=(423,619) | angle=0.2° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.711 | DEBUG    | FUZZY | pos=(426,619) | angle=-0.3° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.728 | DEBUG    | FUZZY | pos=(429,619) | angle=-0.8° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.745 | DEBUG    | FUZZY | pos=(432,619) | angle=-1.3° | G=7 D=0 delta=-7 | mu_N=0.03 mu_Z=0.77 mu_P=0.00 | da=-0.52°
+10:45:55.762 | DEBUG    | FUZZY | pos=(435,619) | angle=-1.9° | G=3 D=0 delta=-3 | mu_N=0.01 mu_Z=0.90 mu_P=0.00 | da=-0.26°
+10:45:55.778 | DEBUG    | FUZZY | pos=(438,619) | angle=-2.1° | G=3 D=0 delta=-3 | mu_N=0.01 mu_Z=0.90 mu_P=0.00 | da=-0.21°
+10:45:55.794 | DEBUG    | FUZZY | pos=(441,619) | angle=-2.3° | G=3 D=0 delta=-3 | mu_N=0.01 mu_Z=0.90 mu_P=0.00 | da=-0.20°
+10:45:55.811 | DEBUG    | FUZZY | pos=(444,619) | angle=-2.5° | G=3 D=0 delta=-3 | mu_N=0.01 mu_Z=0.90 mu_P=0.00 | da=-0.19°
+10:45:55.828 | DEBUG    | FUZZY | pos=(447,618) | angle=-2.7° | G=3 D=0 delta=-3 | mu_N=0.01 mu_Z=0.90 mu_P=0.00 | da=-0.19°
+10:45:55.844 | DEBUG    | FUZZY | pos=(450,618) | angle=-2.9° | G=3 D=0 delta=-3 | mu_N=0.01 mu_Z=0.90 mu_P=0.00 | da=-0.19°
+10:45:55.860 | DEBUG    | FUZZY | pos=(453,618) | angle=-3.1° | G=3 D=0 delta=-3 | mu_N=0.01 mu_Z=0.90 mu_P=0.00 | da=-0.19°
+10:45:55.877 | DEBUG    | FUZZY | pos=(456,618) | angle=-3.3° | G=3 D=0 delta=-3 | mu_N=0.01 mu_Z=0.90 mu_P=0.00 | da=-0.19°
+10:45:55.894 | DEBUG    | FUZZY | pos=(459,618) | angle=-3.5° | G=3 D=0 delta=-3 | mu_N=0.01 mu_Z=0.90 mu_P=0.00 | da=-0.19°
+10:45:55.921 | DEBUG    | FUZZY | pos=(462,618) | angle=-3.7° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.14°
+10:45:55.932 | DEBUG    | FUZZY | pos=(465,617) | angle=-3.8° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:55.946 | DEBUG    | FUZZY | pos=(468,617) | angle=-4.0° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:55.962 | DEBUG    | FUZZY | pos=(471,617) | angle=-4.1° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:55.978 | DEBUG    | FUZZY | pos=(474,617) | angle=-4.2° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:55.996 | DEBUG    | FUZZY | pos=(477,617) | angle=-4.3° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:56.012 | DEBUG    | FUZZY | pos=(480,616) | angle=-4.5° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:56.013 | INFO     | CASE | col=8 row=10 | couleur=NOIR  | séquence=[B → N → B → N → B → N → B → N → B → N → B → N → B → N → B → N]
+10:45:56.030 | DEBUG    | FUZZY | pos=(483,616) | angle=-4.6° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:56.048 | DEBUG    | FUZZY | pos=(486,616) | angle=-4.7° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:56.064 | DEBUG    | FUZZY | pos=(489,616) | angle=-4.8° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:56.080 | DEBUG    | FUZZY | pos=(492,615) | angle=-5.0° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:56.097 | DEBUG    | FUZZY | pos=(495,615) | angle=-5.1° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:56.112 | DEBUG    | FUZZY | pos=(498,615) | angle=-5.2° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:56.129 | DEBUG    | FUZZY | pos=(501,615) | angle=-5.3° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:56.146 | DEBUG    | FUZZY | pos=(504,614) | angle=-5.5° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:56.163 | DEBUG    | FUZZY | pos=(507,614) | angle=-5.6° | G=3 D=1 delta=-2 | mu_N=0.01 mu_Z=0.93 mu_P=0.00 | da=-0.13°
+10:45:56.179 | DEBUG    | FUZZY | pos=(510,614) | angle=-5.7° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=-0.03°
+10:45:56.196 | DEBUG    | FUZZY | pos=(513,613) | angle=-5.7° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=-0.01°
+10:45:56.213 | DEBUG    | FUZZY | pos=(516,613) | angle=-5.7° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=-0.00°
+10:45:56.229 | DEBUG    | FUZZY | pos=(519,613) | angle=-5.7° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=-0.00°
+10:45:56.246 | DEBUG    | FUZZY | pos=(522,613) | angle=-5.7° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=-0.00°
+10:45:56.263 | DEBUG    | FUZZY | pos=(525,612) | angle=-5.7° | G=1 D=1 delta=0 | mu_N=0.00 mu_Z=1.00 mu_P=0.00 | da=-0.00°
+10:45:56.279 | DEBUG    | FUZZY | pos=(527,612) | angle=-5.7° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.10°
+10:45:56.296 | DEBUG    | FUZZY | pos=(530,612) | angle=-5.6° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.312 | DEBUG    | FUZZY | pos=(533,611) | angle=-5.5° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.329 | DEBUG    | FUZZY | pos=(536,611) | angle=-5.4° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.345 | DEBUG    | FUZZY | pos=(539,611) | angle=-5.3° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.346 | INFO     | CASE | col=9 row=10 | couleur=BLANC | séquence=[N → B → N → B → N → B → N → B → N → B → N → B → N → B → N → B]
+10:45:56.362 | DEBUG    | FUZZY | pos=(542,610) | angle=-5.1° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.380 | DEBUG    | FUZZY | pos=(545,610) | angle=-5.0° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.396 | DEBUG    | FUZZY | pos=(548,610) | angle=-4.9° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.412 | DEBUG    | FUZZY | pos=(551,610) | angle=-4.8° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.430 | DEBUG    | FUZZY | pos=(554,609) | angle=-4.6° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.447 | DEBUG    | FUZZY | pos=(557,609) | angle=-4.5° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.464 | DEBUG    | FUZZY | pos=(560,609) | angle=-4.4° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.480 | DEBUG    | FUZZY | pos=(563,609) | angle=-4.3° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.496 | DEBUG    | FUZZY | pos=(566,609) | angle=-4.1° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.513 | DEBUG    | FUZZY | pos=(569,608) | angle=-4.0° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.529 | DEBUG    | FUZZY | pos=(572,608) | angle=-3.9° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.546 | DEBUG    | FUZZY | pos=(575,608) | angle=-3.8° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.564 | DEBUG    | FUZZY | pos=(578,608) | angle=-3.6° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.579 | DEBUG    | FUZZY | pos=(581,607) | angle=-3.5° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.597 | DEBUG    | FUZZY | pos=(584,607) | angle=-3.4° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.613 | DEBUG    | FUZZY | pos=(587,607) | angle=-3.3° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.629 | DEBUG    | FUZZY | pos=(590,607) | angle=-3.1° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.647 | DEBUG    | FUZZY | pos=(593,607) | angle=-3.0° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.663 | DEBUG    | FUZZY | pos=(596,607) | angle=-2.9° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.680 | DEBUG    | FUZZY | pos=(599,606) | angle=-2.8° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.680 | INFO     | CASE | col=10 row=10 | couleur=NOIR  | séquence=[B → N → B → N → B → N → B → N → B → N → B → N → B → N → B → N]
+10:45:56.697 | DEBUG    | FUZZY | pos=(602,606) | angle=-2.6° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.713 | DEBUG    | FUZZY | pos=(605,606) | angle=-2.5° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.729 | DEBUG    | FUZZY | pos=(608,606) | angle=-2.4° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.746 | DEBUG    | FUZZY | pos=(611,606) | angle=-2.3° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.763 | DEBUG    | FUZZY | pos=(614,606) | angle=-2.1° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.12°
+10:45:56.780 | DEBUG    | FUZZY | pos=(617,606) | angle=-2.0° | G=0 D=3 delta=3 | mu_N=0.00 mu_Z=0.90 mu_P=0.01 | da=0.18°
+10:45:56.796 | DEBUG    | FUZZY | pos=(620,606) | angle=-1.8° | G=0 D=3 delta=3 | mu_N=0.00 mu_Z=0.90 mu_P=0.01 | da=0.19°
+10:45:56.811 | DEBUG    | FUZZY | pos=(623,606) | angle=-1.6° | G=0 D=3 delta=3 | mu_N=0.00 mu_Z=0.90 mu_P=0.01 | da=0.19°
+10:45:56.829 | DEBUG    | FUZZY | pos=(626,605) | angle=-1.5° | G=0 D=3 delta=3 | mu_N=0.00 mu_Z=0.90 mu_P=0.01 | da=0.19°
+10:45:56.847 | DEBUG    | FUZZY | pos=(629,605) | angle=-1.3° | G=0 D=3 delta=3 | mu_N=0.00 mu_Z=0.90 mu_P=0.01 | da=0.19°
+10:45:56.863 | DEBUG    | FUZZY | pos=(632,605) | angle=-1.1° | G=0 D=3 delta=3 | mu_N=0.00 mu_Z=0.90 mu_P=0.01 | da=0.19°
+10:45:56.880 | DEBUG    | FUZZY | pos=(635,605) | angle=-0.9° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.14°
+10:45:56.896 | DEBUG    | FUZZY | pos=(638,605) | angle=-0.7° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:56.914 | DEBUG    | FUZZY | pos=(641,605) | angle=-0.6° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:56.932 | DEBUG    | FUZZY | pos=(644,605) | angle=-0.5° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:56.948 | DEBUG    | FUZZY | pos=(647,605) | angle=-0.4° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:56.964 | DEBUG    | FUZZY | pos=(650,605) | angle=-0.2° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:56.982 | DEBUG    | FUZZY | pos=(653,605) | angle=-0.1° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:56.998 | DEBUG    | FUZZY | pos=(656,605) | angle=0.0° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:57.015 | DEBUG    | FUZZY | pos=(659,605) | angle=0.1° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:57.015 | INFO     | CASE | col=11 row=10 | couleur=BLANC | séquence=[N → B → N → B → N → B → N → B → N → B → N → B → N → B → N → B]
+10:45:57.031 | DEBUG    | FUZZY | pos=(662,605) | angle=0.3° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:57.050 | DEBUG    | FUZZY | pos=(665,605) | angle=0.4° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:57.065 | DEBUG    | FUZZY | pos=(668,605) | angle=0.5° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:57.082 | DEBUG    | FUZZY | pos=(671,605) | angle=0.6° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:57.099 | DEBUG    | FUZZY | pos=(674,605) | angle=0.8° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:57.114 | DEBUG    | FUZZY | pos=(677,605) | angle=0.9° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:57.131 | DEBUG    | FUZZY | pos=(680,605) | angle=1.0° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:57.148 | DEBUG    | FUZZY | pos=(683,605) | angle=1.1° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:57.165 | DEBUG    | FUZZY | pos=(686,605) | angle=1.3° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:57.182 | DEBUG    | FUZZY | pos=(689,605) | angle=1.4° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:57.197 | DEBUG    | FUZZY | pos=(692,605) | angle=1.5° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:57.214 | DEBUG    | FUZZY | pos=(695,606) | angle=1.6° | G=1 D=3 delta=2 | mu_N=0.00 mu_Z=0.93 mu_P=0.01 | da=0.13°
+10:45:57.214 | INFO     | ARRIVEE | pos=(698,606) | dist=27.1 px | objectif atteint !

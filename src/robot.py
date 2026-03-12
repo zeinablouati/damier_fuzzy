@@ -14,14 +14,18 @@ class Robot:
         """
         Met à jour la position du robot.
         delta_angle : correction calculée par le contrôleur flou (degrés)
-        """
-        # 1. Tourner
-        self.angle += delta_angle
 
-        # 2. Avancer dans la nouvelle direction
+        Ordre : avancer D'ABORD dans la direction actuelle, PUIS mettre
+        à jour l'angle. Cela évite l'arc de dépassement (le robot ne
+        part pas déjà dans la nouvelle direction avant d'avoir bougé).
+        """
+        # 1. Avancer dans la direction COURANTE (avant toute rotation)
         rad = math.radians(self.angle)
         self.x += math.cos(rad) * self.speed
         self.y += math.sin(rad) * self.speed
+
+        # 2. Mettre à jour l'angle pour la frame suivante
+        self.angle += delta_angle
 
         # 3. Mémoriser la position pour tracer la trajectoire
         self.trace.append((self.x, self.y))

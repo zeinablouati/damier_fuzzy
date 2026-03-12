@@ -87,6 +87,10 @@ class Circuit:
             (x0 + 14*s,   y0 + 12*s),    # → 8  A arrivée bas-droite
         ]
         pygame.draw.lines(self.line_surface, LINE_COLOR, False, pts, LINE_WIDTH)
+        # Remplir les coins (pygame.draw.lines laisse des triangles vides aux jonctions)
+        r = LINE_WIDTH // 2
+        for p in pts:
+            pygame.draw.circle(self.line_surface, LINE_COLOR, p, r)
 
     # ── Circuit 2 : Double boucle (séparateur vertical) ──────
 
@@ -109,6 +113,10 @@ class Circuit:
             (425, 310),   # →  4  A arrivée
         ]
         pygame.draw.lines(self.line_surface, LINE_COLOR, False, pts, LINE_WIDTH)
+        # Remplir les coins
+        r = LINE_WIDTH // 2
+        for p in pts:
+            pygame.draw.circle(self.line_surface, LINE_COLOR, p, r)
 
     # ── Circuit 3 : Double boucle (séparateur horizontal) ────
 
@@ -125,12 +133,17 @@ class Circuit:
         y_mid = (y0 + y1) // 2               # 310
 
         # Périmètre extérieur
-        pygame.draw.lines(self.line_surface, LINE_COLOR, True,
-                          [(x0, y0), (x1, y0), (x1, y1), (x0, y1)],
-                          LINE_WIDTH)
-        # Séparateur horizontal central → 2 croisements gauche et droite
+        corners = [(x0, y0), (x1, y0), (x1, y1), (x0, y1)]
+        pygame.draw.lines(self.line_surface, LINE_COLOR, True, corners, LINE_WIDTH)
+        # Séparateur horizontal central
         pygame.draw.line(self.line_surface, LINE_COLOR,
                          (x0, y_mid), (x1, y_mid), LINE_WIDTH)
+        # Remplir les coins
+        r = LINE_WIDTH // 2
+        for p in corners:
+            pygame.draw.circle(self.line_surface, LINE_COLOR, p, r)
+        pygame.draw.circle(self.line_surface, LINE_COLOR, (x0, y_mid), r)
+        pygame.draw.circle(self.line_surface, LINE_COLOR, (x1, y_mid), r)
 
     # ── Utilitaires ──────────────────────────────────────
 
