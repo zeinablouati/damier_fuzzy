@@ -1,75 +1,106 @@
 # src/circuit.py
+import math
 import pygame
 import numpy as np
 from collections import defaultdict
+from src.pathfinder import (bfs_shortest, get_snake_path, get_diagonal_path,
+                             START, END)
 
-# ── Constantes ────────────────────────────────────────────
 BLACK      = (  0,   0,   0)
 WHITE      = (255, 255, 255)
-LINE_COLOR = (255, 255, 255)   # couleur de la bande sur line_surface
+LINE_COLOR = (255, 255, 255)
 
-CELL_SIZE  = 60   # taille d'une case du damier en pixels
-BAND_WIDTH = 22   # largeur de la bande (~1/3 de la case)
-
-# Grille : 12 colonnes x 10 lignes (12*60=720 < 750, 10*60=600 < 620)
-GRID_COLS = 12
-GRID_ROWS = 10
+CELL_SIZE  = 60
+BAND_WIDTH = 22
 
 
-# ── Helpers de génération de chemin ──────────────────────
+def cell_center(c, r):
+    return c * CELL_SIZE + CELL_SIZE // 2, r * CELL_SIZE + CELL_SIZE // 2
 
-def _row(c0, c1, r):
-    """Ligne horizontale de colonne c0 à c1 sur la ligne r."""
-    step = 1 if c1 >= c0 else -1
-    return [(c, r) for c in range(c0, c1 + step, step)]
 
-def _col(r0, r1, c):
-    """Ligne verticale de ligne r0 à r1 sur la colonne c."""
-    step = 1 if r1 >= r0 else -1
-    return [(c, r) for r in range(r0, r1 + step, step)]
+# ── Direction → vecteur (dc, dr) ────────────────────────
+DIR_VECTORS = {
+    'N':  ( 0, -1), 'S':  ( 0,  1),
+    'E':  ( 1,  0), 'W':  (-1,  0),
+    'NE': ( 1, -1), 'SE': ( 1,  1),
+    'SW': (-1,  1), 'NW': (-1, -1),
+}
+
+# ── Direction → point extrémité dans la case ────────────
+def _band_endpoint(c, r, direction):
+    """
+    Pixel d'extrémité de la bande pour la direction donnée,
+    depuis le centre de la case (c, r).
+    H/V  → milieu du bord concerné.
+    Diag → coin concerné.
+    """
+    CS  = CELL_SIZE
+    cx, cy = cell_center(c, r)
+    left   = c  * CS
+    right  = (c+1) * CS
+    top    = r  * CS
+    bottom = (r+1) * CS
+    mid_x  = cx
+    mid_y  = cy
+
+    return {
+        'N':  (mid_x, top),
+        'S':  (mid_x, bottom),
+        'E':  (right,  mid_y),
+        'W':  (left,   mid_y),
+        'NE': (right,  top),
+        'SE': (right,  bottom),
+        'SW': (left,   bottom),
+        'NW': (left,   top),
+    }[direction]
 
 
 class Circuit:
     """
-    Principe (conforme au sujet) :
-    ─────────────────────────────
-    Le damier est un quadrillage noir/blanc.
-    Le chemin passe par une séquence de cases (col, row).
-    Dans chaque case traversée :
-      • case NOIRE  → bande BLANCHE centrée
-      • case BLANCHE → bande NOIRE  centrée
-    La bande relie le centre de la case aux bords correspondant
-    aux cases voisines dans le chemin (droite, gauche, haut, bas).
-    Les coins sont donc des quarts de bandes perpendiculaires.
-
-    line_surface  → toujours blanc sur noir (pour les capteurs binaires).
-    combined_surface → alternance réelle N/B (pour l'affichage).
+    3 chemins :
+      'court'    — BFS, ~17 cases, angles droits
+      'long'     — 2 virages à 180° espacés, ~35 cases, coins arrondis
+      'diagonal' — diagonales 45°, ~27 cases
+    Les 3 sont dessinés ensemble sur combined_surface.
+    Les capteurs lisent uniquement la surface du chemin actif.
     """
-
-    # (nom, pixel_x_départ, pixel_y_départ, angle_départ_deg)
-    CIRCUITS = {
-        1: ("Rectangle fermé",      150,  90, 0),   # 2e case de la ligne du haut
-        2: ("Croisements",          150,  90, 0),
-        3: ("Serpentin ouvert",     150,  90, 0),
-    }
-
-    # Point d'arrivée en pixels (None = boucle fermée = même que départ)
-    ENDS = {
-        1: None,
-        2: None,
-        3: (90, 510),   # centre de la case (1, 8)
-    }
 
     def __init__(self, width=750, height=620):
         self.width  = width
         self.height = height
 
         self.board_surface    = pygame.Surface((width, height))
-        self.line_surface     = pygame.Surface((width, height))
         self.combined_surface = pygame.Surface((width, height))
 
-        self.current_id = 1
-        self.load(1)
+        self.line_surfaces = {
+            'court':    pygame.Surface((width, height)),
+            'long':     pygame.Surface((width, height)),
+            'diagonal': pygame.Surface((width, height)),
+        }
+
+        self.paths = {
+            'court':    bfs_shortest(),
+            'long':     get_snake_path(),
+            'diagonal': get_diagonal_path(),
+        }
+        self.active_mode = 'court'
+
+        self._init()
+
+    # ── Init ────────────────────────────────────────────────
+
+    def _init(self):
+        self._draw_board()
+        for mode in ('court', 'long', 'diagonal'):
+            self.line_surfaces[mode].fill(BLACK)
+
+        self._draw_path_straight(self.line_surfaces['court'],
+                                  self.paths['court'])
+        self._draw_path_smooth(self.line_surfaces['long'],
+                                self.paths['long'])
+        self._draw_path_diagonal(self.line_surfaces['diagonal'],
+                                  self.paths['diagonal'])
+        self._build_combined()
 
     # ── Damier ──────────────────────────────────────────────
 
@@ -79,189 +110,166 @@ class Circuit:
             for col in range(self.width  // CS + 1):
                 color = BLACK if (col + row) % 2 == 0 else WHITE
                 pygame.draw.rect(self.board_surface, color,
-                                 (col * CS, row * CS, CS, CS))
+                                 (col*CS, row*CS, CS, CS))
 
-    # ── Chargement ──────────────────────────────────────────
-
-    def load(self, circuit_id):
-        self.current_id = circuit_id
-        self._draw_board()
-        self.line_surface.fill(BLACK)
-
-        if   circuit_id == 1: self._draw_circuit1()
-        elif circuit_id == 2: self._draw_circuit2()
-        elif circuit_id == 3: self._draw_circuit3()
-
-        self._build_combined()
-
-    # ── Surface combinée (alternance sans BLEND_XOR) ────────
+    # ── Combined surface (3 chemins inversés) ───────────────
 
     def _build_combined(self):
-        """
-        combined_surface = damier avec la ligne inversée.
-        Pixels blancs de line_surface → inversés sur le damier.
-        Calculé une seule fois par circuit.
-        """
         board = pygame.surfarray.array3d(self.board_surface)
-        line  = pygame.surfarray.array3d(self.line_surface)
-        mask  = line[:, :, 0] > 128
-        comb  = board.copy()
+        mask  = np.zeros(board.shape[:2], dtype=bool)
+        for surf in self.line_surfaces.values():
+            arr   = pygame.surfarray.array3d(surf)
+            mask |= arr[:, :, 0] > 128
+        comb       = board.copy()
         comb[mask] = 255 - board[mask]
         pygame.surfarray.blit_array(self.combined_surface, comb)
 
     # ── Collecte des directions par case ────────────────────
 
-    def _collect_directions(self, path, closed):
+    def _collect_dirs(self, path, closed=False):
         """
-        Pour chaque case du chemin, calcule vers quels bords
-        la bande doit se prolonger (N / S / E / W).
-        Retourne : dict (col, row) → set{'N','S','E','W'}
+        Calcule pour chaque case ses directions de sortie.
+        Supporte H, V et diagonales (dc=±1, dr=±1).
         """
         dirs = defaultdict(set)
         n = len(path)
 
-        for i, (c, r) in enumerate(path):
-            if closed:
-                neighbors = [path[(i - 1) % n], path[(i + 1) % n]]
-            else:
-                neighbors = []
-                if i > 0:     neighbors.append(path[i - 1])
-                if i < n - 1: neighbors.append(path[i + 1])
+        # Table inverse dc,dr → nom de direction
+        inv = {v: k for k, v in DIR_VECTORS.items()}
 
-            for nc, nr in neighbors:
-                if   nc == c + 1: dirs[(c, r)].add('E')
-                elif nc == c - 1: dirs[(c, r)].add('W')
-                elif nr == r + 1: dirs[(c, r)].add('S')
-                elif nr == r - 1: dirs[(c, r)].add('N')
+        for i, (c, r) in enumerate(path):
+            nbrs = []
+            if closed:
+                nbrs = [path[(i-1)%n], path[(i+1)%n]]
+            else:
+                if i > 0:     nbrs.append(path[i-1])
+                if i < n-1:   nbrs.append(path[i+1])
+
+            for nc, nr in nbrs:
+                dc, dr = nc - c, nr - r
+                # Normaliser pour les diagonales (dc,dr peut être ±1,±1)
+                # (pour les segments droits dc ou dr = 0)
+                key = (dc, dr)
+                if key in inv:
+                    dirs[(c, r)].add(inv[key])
 
         return dirs
 
-    # ── Dessin d'une case du chemin ──────────────────────────
+    # ── CHEMIN COURT : bandes droites, angles 90° ───────────
 
-    def _draw_cell_band(self, c, r, directions):
-        """
-        Trace la bande dans la case (c, r) :
-        - du centre de la case vers chaque bord concerné
-        - disque central pour combler les coins
-        La bande est TOUJOURS BLANCHE sur line_surface
-        (l'alternance couleur est faite par numpy dans _build_combined).
-        """
+    def _draw_cell_straight(self, surf, c, r, directions):
+        cx, cy = cell_center(c, r)
+        for d in directions:
+            ep = _band_endpoint(c, r, d)
+            pygame.draw.line(surf, LINE_COLOR, (cx, cy), ep, BAND_WIDTH)
+        pygame.draw.circle(surf, LINE_COLOR, (cx, cy), BAND_WIDTH // 2)
+
+    def _draw_path_straight(self, surf, path):
+        for (c, r), dirs in self._collect_dirs(path).items():
+            self._draw_cell_straight(surf, c, r, dirs)
+
+    # ── CHEMIN LONG : coins arrondis pour les virages 90° ───
+
+    def _draw_cell_smooth(self, surf, c, r, directions):
         CS = CELL_SIZE
         BW = BAND_WIDTH
+        R  = CS // 2
+        cx, cy = cell_center(c, r)
+        d = frozenset(directions)
 
-        cx = c * CS + CS // 2   # centre pixel x
-        cy = r * CS + CS // 2   # centre pixel y
+        if d == frozenset(['E', 'W']):
+            pygame.draw.line(surf, LINE_COLOR, (cx-R, cy), (cx+R, cy), BW)
+            return
+        if d == frozenset(['N', 'S']):
+            pygame.draw.line(surf, LINE_COLOR, (cx, cy-R), (cx, cy+R), BW)
+            return
 
-        bords = {
-            'N': (cx, r * CS),
-            'S': (cx, (r + 1) * CS),
-            'W': (c * CS, cy),
-            'E': ((c + 1) * CS, cy),
+        corner_map = {
+            frozenset(['E','S']): ((cx+R, cy+R), -math.pi/2, -math.pi),
+            frozenset(['E','N']): ((cx+R, cy-R),  math.pi/2,  math.pi),
+            frozenset(['W','S']): ((cx-R, cy+R), -math.pi/2,  0.0),
+            frozenset(['W','N']): ((cx-R, cy-R),  math.pi/2,  0.0),
         }
+        if d in corner_map:
+            (acx, acy), a0, a1 = corner_map[d]
+            pts = []
+            for k in range(19):
+                a = a0 + (a1 - a0) * k / 18
+                pts.append((int(acx + R*math.cos(a)),
+                             int(acy + R*math.sin(a))))
+            pygame.draw.lines(surf, LINE_COLOR, False, pts, BW)
+            return
 
-        for d in directions:
-            ex, ey = bords[d]
-            pygame.draw.line(self.line_surface, LINE_COLOR,
-                             (cx, cy), (ex, ey), BW)
+        # Fallback T/croix
+        for dd in directions:
+            ep = _band_endpoint(c, r, dd)
+            pygame.draw.line(surf, LINE_COLOR, (cx, cy), ep, BW)
+        pygame.draw.circle(surf, LINE_COLOR, (cx, cy), BW // 2)
 
-        # Disque central = raccord parfait quelle que soit la direction
-        pygame.draw.circle(self.line_surface, LINE_COLOR, (cx, cy), BW // 2)
+    def _draw_path_smooth(self, surf, path):
+        for (c, r), dirs in self._collect_dirs(path).items():
+            self._draw_cell_smooth(surf, c, r, dirs)
 
-    # ── Tracé complet d'un chemin ────────────────────────────
+    # ── CHEMIN DIAGONAL : bandes à 45° ──────────────────────
 
-    def _draw_path(self, *path_segments, closed=False):
+    def _draw_cell_diagonal(self, surf, c, r, directions):
         """
-        Accepte un ou plusieurs segments de chemin (listes de cases).
-        Les concatène, calcule les directions, puis dessine chaque case.
-        Gère les croisements automatiquement (union des directions).
+        Trace les bandes dans la case en gérant les 8 directions.
+        Pour les cases traversées en diagonale pure (ex: NW→SE),
+        la bande va d'un coin à l'autre en passant par le centre.
+        Pour les jonctions droit→diagonal, la bande relie le bord
+        au coin concerné en passant par le centre.
         """
-        # Fusionner les directions de tous les segments
-        all_dirs = defaultdict(set)
+        cx, cy = cell_center(c, r)
+        BW = BAND_WIDTH
 
-        for seg, seg_closed in path_segments:
-            d = self._collect_directions(seg, seg_closed)
-            for cell, dirs in d.items():
-                all_dirs[cell] |= dirs
+        d = frozenset(directions)
 
-        # Dessiner chaque case une seule fois avec toutes ses directions
-        for (c, r), dirs in all_dirs.items():
-            self._draw_cell_band(c, r, dirs)
+        # ── Passage diagonal pur (coin à coin) ──────────────
+        diag_pairs = {
+            frozenset(['NW', 'SE']): ('NW', 'SE'),
+            frozenset(['NE', 'SW']): ('NE', 'SW'),
+        }
+        if d in diag_pairs:
+            d1, d2 = diag_pairs[d]
+            ep1 = _band_endpoint(c, r, d1)
+            ep2 = _band_endpoint(c, r, d2)
+            pygame.draw.line(surf, LINE_COLOR, ep1, ep2, BW)
+            pygame.draw.circle(surf, LINE_COLOR, (cx, cy), BW // 2)
+            return
 
-    # ── Circuit 1 : rectangle fermé ─────────────────────────
+        # ── Cas général : une ligne par direction ────────────
+        # (jonctions droit→diagonal ou jonctions multiples)
+        for dd in directions:
+            ep = _band_endpoint(c, r, dd)
+            pygame.draw.line(surf, LINE_COLOR, (cx, cy), ep, BW)
+        pygame.draw.circle(surf, LINE_COLOR, (cx, cy), BW // 2)
 
-    def _draw_circuit1(self):
-        """
-        Boucle rectangulaire — 4 virages à 90°.
-        Chemin : haut (→) + droite (↓) + bas (←) + gauche (↑)
-        """
-        path = (
-            _row(1, 10, 1) +    # haut  →  cols 1..10, row 1
-            _col(2,  8, 10) +   # droite ↓  col 10, rows 2..8
-            _row(9,  1,  8) +   # bas   ←  cols 9..1, row 8
-            _col(7,  2,  1)     # gauche ↑  col 1, rows 7..2
-        )
-        self._draw_path((path, True))
+    def _draw_path_diagonal(self, surf, path):
+        for (c, r), dirs in self._collect_dirs(path).items():
+            self._draw_cell_diagonal(surf, c, r, dirs)
 
-    # ── Circuit 2 : rectangle + croisements ─────────────────
+    # ── Changement de chemin actif ──────────────────────────
 
-    def _draw_circuit2(self):
-        """
-        Rectangle fermé + barre horizontale à row=4.
-        Crée 2 croisements (col 1 et col 10).
-        Au croisement : delta ≈ 0 → règle Z → tout droit.
-        """
-        rect = (
-            _row(1, 10,  1) +
-            _col(2,  8, 10) +
-            _row(9,  1,  8) +
-            _col(7,  2,  1)
-        )
-        # Barre de croisement (cols 2..9 : les coins 1 et 10 sont déjà dans rect)
-        barre = _row(2, 9, 4)
-
-        # Les cases (1,4) et (10,4) sont dans rect (N+S) ET dans barre (E ou W)
-        # → _draw_path fusionne automatiquement les directions → croisement T
-        self._draw_path((rect, True), (barre, False))
-
-    # ── Circuit 3 : serpentin ouvert ────────────────────────
-
-    def _draw_circuit3(self):
-        """
-        4 lignes horizontales reliées par des connecteurs verticaux.
-        Chemin OUVERT : départ (1,1) → arrivée (1,8).
-        Tous les virages à 90°.
-        """
-        path = (
-            _row(1, 10,  1) +   # → row 1
-            _col(2,  3, 10) +   # ↓ col 10, rows 2-3
-            _row(9,  1,  3) +   # ← row 3
-            _col(4,  6,  1) +   # ↓ col 1, rows 4-6
-            _row(2, 10,  6) +   # → row 6
-            _col(7,  8, 10) +   # ↓ col 10, rows 7-8
-            _row(9,  1,  8)     # ← row 8
-        )
-        self._draw_path((path, False))
+    def set_mode(self, mode):
+        self.active_mode = mode
 
     # ── Accesseurs ──────────────────────────────────────────
 
     def get_start(self):
-        _, x, y, a = self.CIRCUITS[self.current_id]
-        return x, y, a
+        c, r = START
+        px, py = cell_center(c, r)
+        return px, py, 0
 
     def get_end(self):
-        end = self.ENDS[self.current_id]
-        if end is None:
-            _, x, y, _ = self.CIRCUITS[self.current_id]
-            return x, y
-        return end
+        return cell_center(*END)
 
-    def is_loop(self):
-        return self.ENDS[self.current_id] is None
+    def get_path_len(self, mode=None):
+        return len(self.paths[mode or self.active_mode])
 
     def get_pixel_array(self):
-        """line_surface (blanc/noir) — utilisée par les capteurs binaires."""
-        return pygame.surfarray.array3d(self.line_surface)
+        return pygame.surfarray.array3d(self.line_surfaces[self.active_mode])
 
     def get_name(self):
-        name, _, _, _ = self.CIRCUITS[self.current_id]
-        return name
+        return {'court': 'Court', 'long': 'Long',
+                'diagonal': 'Diagonal 45°'}[self.active_mode]
